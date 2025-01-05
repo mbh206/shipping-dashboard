@@ -1,0 +1,2930 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "permissions": "Full access to all features."
+    },
+    {
+      "id": 2,
+      "name": "Manager",
+      "permissions": "Manage shipments and customers."
+    },
+    {
+      "id": 3,
+      "name": "Operator",
+      "permissions": "Handle day-to-day shipment tasks."
+    },
+    {
+      "id": 4,
+      "name": "Viewer",
+      "permissions": "View-only access to data."
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Schiller, Zieme and Hilll",
+      "address": "618 Park Lane",
+      "phone": "439.474.9219 x80979",
+      "email": "Brando_Emmerich32@hotmail.com",
+      "createdAt": "2024-05-18T04:16:46.757Z",
+      "updatedAt": "2024-12-30T10:19:36.464Z"
+    },
+    {
+      "id": 2,
+      "name": "Sauer - Will",
+      "address": "56138 Oberbrunner Meadows",
+      "phone": "1-835-878-8080 x4184",
+      "email": "Spencer95@hotmail.com",
+      "createdAt": "2024-03-14T08:09:59.514Z",
+      "updatedAt": "2024-12-31T01:02:53.711Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Jena2",
+      "password": "123123",
+      "email": "Jena_Fay12@hotmail.com",
+      "roleId": 2,
+      "companyId": 1,
+      "createdAt": "2024-09-12T12:33:39.696Z",
+      "updatedAt": "2024-12-30T02:42:55.460Z"
+    },
+    {
+      "id": 2,
+      "username": "Jon70",
+      "password": "123123",
+      "email": "Jon70@gmail.com",
+      "roleId": 3,
+      "companyId": 1,
+      "createdAt": "2024-06-13T07:51:52.779Z",
+      "updatedAt": "2024-12-30T15:37:28.573Z"
+    },
+    {
+      "id": 3,
+      "username": "Ted_Little",
+      "password": "123123",
+      "email": "Ted_Little25@yahoo.com",
+      "roleId": 2,
+      "companyId": 1,
+      "createdAt": "2024-07-22T04:04:16.306Z",
+      "updatedAt": "2024-12-30T13:30:51.133Z"
+    },
+    {
+      "id": 4,
+      "username": "Sammie1",
+      "password": "123123",
+      "email": "Sammie_Christiansen4@yahoo.com",
+      "roleId": 4,
+      "companyId": 1,
+      "createdAt": "2024-06-04T10:22:30.955Z",
+      "updatedAt": "2024-12-30T23:54:58.445Z"
+    },
+    {
+      "id": 5,
+      "username": "Adams58",
+      "password": "123123",
+      "email": "Willy_Adams58@yahoo.com",
+      "roleId": 4,
+      "companyId": 1,
+      "createdAt": "2024-06-07T00:00:56.458Z",
+      "updatedAt": "2024-12-30T11:08:09.271Z"
+    },
+    {
+      "id": 6,
+      "username": "Casper59",
+      "password": "123123",
+      "email": "Rosemarie_Casper@hotmail.com",
+      "roleId": 3,
+      "companyId": 2,
+      "createdAt": "2024-03-05T19:17:44.682Z",
+      "updatedAt": "2024-12-30T08:27:02.941Z"
+    },
+    {
+      "id": 7,
+      "username": "Medhurst24",
+      "password": "123123",
+      "email": "Ada_Medhurst@yahoo.com",
+      "roleId": 1,
+      "companyId": 2,
+      "createdAt": "2024-09-16T22:01:10.325Z",
+      "updatedAt": "2024-12-31T01:11:19.417Z"
+    },
+    {
+      "id": 8,
+      "username": "Horace78",
+      "password": "123123",
+      "email": "Horace78@yahoo.com",
+      "roleId": 3,
+      "companyId": 2,
+      "createdAt": "2024-04-27T11:53:39.491Z",
+      "updatedAt": "2024-12-31T00:27:34.188Z"
+    },
+    {
+      "id": 9,
+      "username": "Leonard32",
+      "password": "123123",
+      "email": "Leonard97@hotmail.com",
+      "roleId": 1,
+      "companyId": 2,
+      "createdAt": "2024-07-02T18:38:17.057Z",
+      "updatedAt": "2024-12-30T04:45:07.155Z"
+    },
+    {
+      "id": 10,
+      "username": "Marie1",
+      "password": "123123",
+      "email": "Marie79@yahoo.com",
+      "roleId": 4,
+      "companyId": 2,
+      "createdAt": "2024-06-05T19:58:10.699Z",
+      "updatedAt": "2024-12-31T01:28:27.883Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "companyName": "Rutherford - Daugherty",
+      "contactEmail": "Noelia_Greenholt94@gmail.com",
+      "contactPhone": "285-885-0178 x91571",
+      "address": "559 Abbey Road",
+      "companyId": 1
+    },
+    {
+      "id": 2,
+      "companyName": "Hand, Bergstrom and Murazik",
+      "contactEmail": "Precious_Turcotte72@gmail.com",
+      "contactPhone": "785-437-9966 x0872",
+      "address": "7084 Elm Road",
+      "companyId": 1
+    },
+    {
+      "id": 3,
+      "companyName": "Weber - Turcotte",
+      "contactEmail": "Stefan98@gmail.com",
+      "contactPhone": "561-644-9491 x908",
+      "address": "7659 E Grand Avenue",
+      "companyId": 1
+    },
+    {
+      "id": 4,
+      "companyName": "Cremin - Boehm",
+      "contactEmail": "Claire26@gmail.com",
+      "contactPhone": "839.994.3082",
+      "address": "1774 Oxford Road",
+      "companyId": 1
+    },
+    {
+      "id": 5,
+      "companyName": "Fritsch, Mosciski and Kassulke",
+      "contactEmail": "Kaitlyn_King@hotmail.com",
+      "contactPhone": "1-918-530-9318 x3707",
+      "address": "7419 Natalie Streets",
+      "companyId": 1
+    },
+    {
+      "id": 6,
+      "companyName": "Hilll and Sons",
+      "contactEmail": "Brandy_Mills@hotmail.com",
+      "contactPhone": "401-561-2249 x697",
+      "address": "2600 Cummings Trace",
+      "companyId": 1
+    },
+    {
+      "id": 7,
+      "companyName": "Herzog - Satterfield",
+      "contactEmail": "Shaina.Pouros@yahoo.com",
+      "contactPhone": "1-609-706-2944 x85579",
+      "address": "8099 Wood Lane",
+      "companyId": 1
+    },
+    {
+      "id": 8,
+      "companyName": "Strosin - Aufderhar",
+      "contactEmail": "Tremayne.Dibbert3@yahoo.com",
+      "contactPhone": "1-319-463-0889 x2728",
+      "address": "8488 Doug Bypass",
+      "companyId": 1
+    },
+    {
+      "id": 9,
+      "companyName": "Botsford, Grant and Frami",
+      "contactEmail": "Gunner_Hermiston@yahoo.com",
+      "contactPhone": "228.761.4935 x017",
+      "address": "533 Murray Point",
+      "companyId": 1
+    },
+    {
+      "id": 10,
+      "companyName": "Franey, Kilback and Lesch",
+      "contactEmail": "Earlene_Sipes95@yahoo.com",
+      "contactPhone": "822.329.4874 x91994",
+      "address": "475 Wolf Light",
+      "companyId": 1
+    },
+    {
+      "id": 11,
+      "companyName": "Hamill Inc",
+      "contactEmail": "Violet.Willms90@hotmail.com",
+      "contactPhone": "982-889-0920",
+      "address": "313 E 4th Street",
+      "companyId": 2
+    },
+    {
+      "id": 12,
+      "companyName": "Bernhard, Crona and Hoeger",
+      "contactEmail": "Craig_Cronin@gmail.com",
+      "contactPhone": "(959) 952-3542 x4201",
+      "address": "7138 Gladstone Road",
+      "companyId": 2
+    },
+    {
+      "id": 13,
+      "companyName": "Lebsack - Jakubowski",
+      "contactEmail": "Trudie_Casper@hotmail.com",
+      "contactPhone": "235.256.7577",
+      "address": "61607 Ethyl Walk",
+      "companyId": 2
+    },
+    {
+      "id": 14,
+      "companyName": "Wisoky Inc",
+      "contactEmail": "Dorian.Roberts@gmail.com",
+      "contactPhone": "(955) 368-7248 x9547",
+      "address": "856 Bins Union",
+      "companyId": 2
+    },
+    {
+      "id": 15,
+      "companyName": "Yundt and Sons",
+      "contactEmail": "Mauricio50@hotmail.com",
+      "contactPhone": "1-314-309-1581 x38041",
+      "address": "17801 Romaguera Wall",
+      "companyId": 2
+    },
+    {
+      "id": 16,
+      "companyName": "Cormier - Jacobs",
+      "contactEmail": "Emmie47@gmail.com",
+      "contactPhone": "1-973-354-7283 x7861",
+      "address": "335 Krajcik Port",
+      "companyId": 2
+    },
+    {
+      "id": 17,
+      "companyName": "Bosco and Sons",
+      "contactEmail": "Vivienne_Zboncak42@hotmail.com",
+      "contactPhone": "(982) 349-7995 x164",
+      "address": "363 Hilpert Ramp",
+      "companyId": 2
+    },
+    {
+      "id": 18,
+      "companyName": "Christiansen, Mohr and Parisian",
+      "contactEmail": "Lyda22@yahoo.com",
+      "contactPhone": "719-697-0932 x19128",
+      "address": "11141 Sadie Lodge",
+      "companyId": 2
+    },
+    {
+      "id": 19,
+      "companyName": "Friesen Inc",
+      "contactEmail": "Leonardo_Mills39@yahoo.com",
+      "contactPhone": "(677) 709-2826",
+      "address": "82293 Isaiah Dam",
+      "companyId": 2
+    },
+    {
+      "id": 20,
+      "companyName": "Leuschke - Harber",
+      "contactEmail": "Erling37@gmail.com",
+      "contactPhone": "(817) 839-1825 x268",
+      "address": "387 Amely Knolls",
+      "companyId": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "product": "Apples",
+      "weight": 150,
+      "amount": 500,
+      "shipmentId": 2,
+      "arrivalPortId": 10,
+      "arrivalDate": "2024-01-26T07:23:39.713Z",
+      "destination": "Taipei",
+      "deliveryDate": "2024-02-02T14:23:39.713Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 2,
+      "product": "Electronics",
+      "weight": 800,
+      "amount": 400,
+      "shipmentId": 5,
+      "arrivalPortId": 4,
+      "arrivalDate": "2024-01-26T07:23:39.713Z",
+      "destination": "Taipei",
+      "deliveryDate": "2024-02-02T14:23:39.713Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 3,
+      "product": "Laptops",
+      "weight": 2.5,
+      "amount": 1200,
+      "shipmentId": 4,
+      "arrivalPortId": 3,
+      "arrivalDate": "2025-01-15T00:00:00.000Z",
+      "destination": "New York",
+      "deliveryDate": "2025-01-20T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 4,
+      "product": "Smartphones",
+      "weight": 0.5,
+      "amount": 800,
+      "shipmentId": 18,
+      "arrivalPortId": 14,
+      "arrivalDate": "2025-02-10T00:00:00.000Z",
+      "destination": "Los Angeles",
+      "deliveryDate": "2025-02-15T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 5,
+      "product": "Tablets",
+      "weight": 0.8,
+      "amount": 600,
+      "shipmentId": 6,
+      "arrivalPortId": 1,
+      "arrivalDate": "2025-03-05T00:00:00.000Z",
+      "destination": "Chicago",
+      "deliveryDate": "2025-03-10T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 6,
+      "product": "Monitors",
+      "weight": 5.0,
+      "amount": 300,
+      "shipmentId": 7,
+      "arrivalPortId": 5,
+      "arrivalDate": "2025-04-12T00:00:00.000Z",
+      "destination": "Houston",
+      "deliveryDate": "2025-04-17T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 7,
+      "product": "Keyboards",
+      "weight": 0.7,
+      "amount": 150,
+      "shipmentId": 8,
+      "arrivalPortId": 4,
+      "arrivalDate": "2025-05-20T00:00:00.000Z",
+      "destination": "Phoenix",
+      "deliveryDate": "2025-05-25T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 8,
+      "product": "Mice",
+      "weight": 0.3,
+      "amount": 100,
+      "shipmentId": 9,
+      "arrivalPortId": 3,
+      "arrivalDate": "2025-06-18T00:00:00.000Z",
+      "destination": "Philadelphia",
+      "deliveryDate": "2025-06-23T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 9,
+      "product": "Headphones",
+      "weight": 0.2,
+      "amount": 200,
+      "shipmentId": 10,
+      "arrivalPortId": 2,
+      "arrivalDate": "2025-07-10T00:00:00.000Z",
+      "destination": "San Antonio",
+      "deliveryDate": "2025-07-15T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 10,
+      "product": "Webcams",
+      "weight": 0.4,
+      "amount": 120,
+      "shipmentId": 11,
+      "arrivalPortId": 1,
+      "arrivalDate": "2025-08-22T00:00:00.000Z",
+      "destination": "San Diego",
+      "deliveryDate": "2025-08-27T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 11,
+      "product": "Printers",
+      "weight": 8.0,
+      "amount": 450,
+      "shipmentId": 12,
+      "arrivalPortId": 5,
+      "arrivalDate": "2025-09-15T00:00:00.000Z",
+      "destination": "Dallas",
+      "deliveryDate": "2025-09-20T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 12,
+      "product": "Scanners",
+      "weight": 3.0,
+      "amount": 220,
+      "shipmentId": 13,
+      "arrivalPortId": 3,
+      "arrivalDate": "2025-10-05T00:00:00.000Z",
+      "destination": "San Jose",
+      "deliveryDate": "2025-10-10T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 13,
+      "product": "External Hard Drives",
+      "weight": 0.6,
+      "amount": 250,
+      "shipmentId": 14,
+      "arrivalPortId": 4,
+      "arrivalDate": "2025-11-12T00:00:00.000Z",
+      "destination": "Austin",
+      "deliveryDate": "2025-11-17T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 14,
+      "product": "USB Hubs",
+      "weight": 0.1,
+      "amount": 80,
+      "shipmentId": 15,
+      "arrivalPortId": 2,
+      "arrivalDate": "2025-12-20T00:00:00.000Z",
+      "destination": "Jacksonville",
+      "deliveryDate": "2025-12-25T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 15,
+      "product": "Gaming Consoles",
+      "weight": 2.0,
+      "amount": 500,
+      "shipmentId": 16,
+      "arrivalPortId": 10,
+      "arrivalDate": "2026-01-10T00:00:00.000Z",
+      "destination": "Fort Worth",
+      "deliveryDate": "2026-01-15T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 16,
+      "product": "VR Headsets",
+      "weight": 0.7,
+      "amount": 350,
+      "shipmentId": 17,
+      "arrivalPortId": 3,
+      "arrivalDate": "2026-02-18T00:00:00.000Z",
+      "destination": "Columbus",
+      "deliveryDate": "2026-02-23T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 17,
+      "product": "Web Servers",
+      "weight": 10.0,
+      "amount": 1500,
+      "shipmentId": 18,
+      "arrivalPortId": 5,
+      "arrivalDate": "2026-03-25T00:00:00.000Z",
+      "destination": "Charlotte",
+      "deliveryDate": "2026-03-30T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 18,
+      "product": "Networking Routers",
+      "weight": 1.2,
+      "amount": 180,
+      "shipmentId": 19,
+      "arrivalPortId": 2,
+      "arrivalDate": "2026-04-15T00:00:00.000Z",
+      "destination": "San Francisco",
+      "deliveryDate": "2026-04-20T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 19,
+      "product": "Solid State Drives",
+      "weight": 0.4,
+      "amount": 220,
+      "shipmentId": 20,
+      "arrivalPortId": 4,
+      "arrivalDate": "2026-05-05T00:00:00.000Z",
+      "destination": "Indianapolis",
+      "deliveryDate": "2026-05-10T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 20,
+      "product": "Graphic Cards",
+      "weight": 0.9,
+      "amount": 700,
+      "shipmentId": 1,
+      "arrivalPortId": 5,
+      "arrivalDate": "2026-06-12T00:00:00.000Z",
+      "destination": "Seattle",
+      "deliveryDate": "2026-06-17T00:00:00.000Z",
+      "createdAt": "2024-12-30T13:40:04.591Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Chauncey Becker",
+      "email": "Chauncey_Becker@yahoo.com",
+      "phone": "229-805-2568 x80041",
+      "role": "Forward Assurance Producer",
+      "customerId": 1,
+      "createdAt": "2024-01-21T06:53:39.713Z",
+      "updatedAt": "2024-12-30T13:40:04.591Z"
+    },
+    {
+      "id": 2,
+      "name": "Rudy Veum",
+      "email": "Rudy88@hotmail.com",
+      "phone": "1-534-771-5372 x17354",
+      "role": "Investor Functionality Assistant",
+      "customerId": 1,
+      "createdAt": "2024-09-10T01:32:02.011Z",
+      "updatedAt": "2024-12-30T07:02:49.819Z"
+    },
+    {
+      "id": 3,
+      "name": "Julian Goldner II",
+      "email": "Julian73@yahoo.com",
+      "phone": "(434) 717-6077",
+      "role": "Dynamic Metrics Officer",
+      "customerId": 1,
+      "createdAt": "2024-11-06T05:12:08.085Z",
+      "updatedAt": "2024-12-30T23:42:23.215Z"
+    },
+    {
+      "id": 4,
+      "name": "Derek Langosh",
+      "email": "Derek_Langosh@hotmail.com",
+      "phone": "279.423.2132 x94468",
+      "role": "Legacy Accounts Architect",
+      "customerId": 2,
+      "createdAt": "2024-12-30T09:49:11.174Z",
+      "updatedAt": "2024-12-30T05:33:57.140Z"
+    },
+    {
+      "id": 5,
+      "name": "Noah Conn",
+      "email": "Noah.Conn2@yahoo.com",
+      "phone": "(235) 473-1493",
+      "role": "Direct Operations Director",
+      "customerId": 2,
+      "createdAt": "2024-12-28T21:51:20.757Z",
+      "updatedAt": "2024-12-30T05:11:39.821Z"
+    },
+    {
+      "id": 6,
+      "name": "Forrest OKeefe",
+      "email": "Forrest_OKeefe@gmail.com",
+      "phone": "203.996.9381",
+      "role": "Human Tactics Officer",
+      "customerId": 2,
+      "createdAt": "2024-04-08T19:43:00.670Z",
+      "updatedAt": "2024-12-30T11:47:51.353Z"
+    },
+    {
+      "id": 7,
+      "name": "Clark Kulas",
+      "email": "Clark28@hotmail.com",
+      "phone": "1-394-892-3730 x834",
+      "role": "Forward Tactics Strategist",
+      "customerId": 3,
+      "createdAt": "2024-05-04T03:24:54.231Z",
+      "updatedAt": "2024-12-30T11:45:21.132Z"
+    },
+    {
+      "id": 8,
+      "name": "Pamela Koelpin-Frami",
+      "email": "Pamela_20@gmail.com",
+      "phone": "1-228-579-7496",
+      "role": "Internal Security Architect",
+      "customerId": 3,
+      "createdAt": "2024-11-24T17:25:00.886Z",
+      "updatedAt": "2024-12-30T20:12:30.975Z"
+    },
+    {
+      "id": 9,
+      "name": "April Thompson V",
+      "email": "Thompson94@gmail.com",
+      "phone": "1-934-947-6799 x982",
+      "role": "Investor Data Coordinator",
+      "customerId": 3,
+      "createdAt": "2024-09-28T07:49:36.074Z",
+      "updatedAt": "2024-12-30T02:21:04.674Z"
+    },
+    {
+      "id": 10,
+      "name": "Melvin Brown I",
+      "email": "Melvin.Brown@hotmail.com",
+      "phone": "(996) 407-4628 x662",
+      "role": "International Division Assistant",
+      "customerId": 4,
+      "createdAt": "2024-11-21T05:33:07.703Z",
+      "updatedAt": "2024-12-30T12:29:14.680Z"
+    },
+    {
+      "id": 11,
+      "name": "Nolan Anderson",
+      "email": "Nolan_Anderson@gmail.com",
+      "phone": "811.809.4356 x86824",
+      "role": "Product Web Supervisor",
+      "customerId": 4,
+      "createdAt": "2024-08-25T19:29:43.998Z",
+      "updatedAt": "2024-12-30T06:13:39.116Z"
+    },
+    {
+      "id": 12,
+      "name": "Ollie Leannon",
+      "email": "Ollie.Leannon@hotmail.com",
+      "phone": "(349) 466-0152 x21494",
+      "role": "Lead Creative Specialist",
+      "customerId": 4,
+      "createdAt": "2024-03-20T01:19:50.599Z",
+      "updatedAt": "2024-12-30T23:59:23.808Z"
+    },
+    {
+      "id": 13,
+      "name": "Darryl Hartmann",
+      "email": "Darryl13@gmail.com",
+      "phone": "1-964-397-5393",
+      "role": "Future Web Representative",
+      "customerId": 5,
+      "createdAt": "2024-11-01T01:21:50.800Z",
+      "updatedAt": "2024-12-30T06:46:00.122Z"
+    },
+    {
+      "id": 14,
+      "name": "Adella Klocko",
+      "email": "Adella52@gmail.com",
+      "phone": "(436) 677-1790",
+      "role": "Direct Web Officer",
+      "customerId": 5,
+      "createdAt": "2024-06-06T19:38:39.802Z",
+      "updatedAt": "2024-12-30T07:39:05.889Z"
+    },
+    {
+      "id": 15,
+      "name": "Kevon White",
+      "email": "Kevon_44@yahoo.com",
+      "phone": "849.317.0073",
+      "role": "Internal Security Producer",
+      "customerId": 5,
+      "createdAt": "2024-10-19T07:12:41.659Z",
+      "updatedAt": "2024-12-30T11:48:36.138Z"
+    },
+    {
+      "id": 16,
+      "name": "Dr. Gertrude Schowalter",
+      "email": "Gertrude77@gmail.com",
+      "phone": "798.475.7648 x9237",
+      "role": "Regional Implementation Assistant",
+      "customerId": 6,
+      "createdAt": "2024-10-31T11:08:42.484Z",
+      "updatedAt": "2024-12-30T09:39:11.955Z"
+    },
+    {
+      "id": 17,
+      "name": "Neha Schimmel",
+      "email": "Neha_Schimmel@yahoo.com",
+      "phone": "599.252.4503",
+      "role": "National Program Facilitator",
+      "customerId": 6,
+      "createdAt": "2024-04-15T01:16:23.392Z",
+      "updatedAt": "2024-12-30T06:04:18.240Z"
+    },
+    {
+      "id": 18,
+      "name": "Ayla Swift",
+      "email": "Ayla_Swift38@hotmail.com",
+      "phone": "1-890-869-0824",
+      "role": "Legacy Program Planner",
+      "customerId": 6,
+      "createdAt": "2024-05-04T10:10:26.136Z",
+      "updatedAt": "2024-12-30T13:28:04.044Z"
+    },
+    {
+      "id": 19,
+      "name": "Freida Walsh",
+      "email": "Freida.Walsh16@hotmail.com",
+      "phone": "358-678-4873",
+      "role": "Investor Mobility Agent",
+      "customerId": 7,
+      "createdAt": "2024-08-15T21:59:38.289Z",
+      "updatedAt": "2024-12-30T21:53:59.686Z"
+    },
+    {
+      "id": 20,
+      "name": "Eliseo Gibson",
+      "email": "Eliseo.Gibson87@gmail.com",
+      "phone": "(403) 317-8391",
+      "role": "Forward Marketing Developer",
+      "customerId": 7,
+      "createdAt": "2024-07-02T12:57:19.652Z",
+      "updatedAt": "2024-12-30T13:14:09.685Z"
+    },
+    {
+      "id": 21,
+      "name": "Bill Dibbert",
+      "email": "Dibbert68@yahoo.com",
+      "phone": "968-429-3264 x7180",
+      "role": "Legacy Integration Producer",
+      "customerId": 7,
+      "createdAt": "2024-10-28T07:36:02.524Z",
+      "updatedAt": "2024-12-30T08:35:31.778Z"
+    },
+    {
+      "id": 22,
+      "name": "Drew Hahn",
+      "email": "Drew88@hotmail.com",
+      "phone": "832-684-5584",
+      "role": "Forward Accountability Architect",
+      "customerId": 8,
+      "createdAt": "2024-08-09T18:09:39.378Z",
+      "updatedAt": "2024-12-30T10:04:34.782Z"
+    },
+    {
+      "id": 23,
+      "name": "Zoie Bogisich",
+      "email": "Zoie16@hotmail.com",
+      "phone": "864-974-4271 x6086",
+      "role": "Legacy Data Designer",
+      "customerId": 8,
+      "createdAt": "2024-12-18T23:42:27.603Z",
+      "updatedAt": "2024-12-30T22:13:11.978Z"
+    },
+    {
+      "id": 24,
+      "name": "Laverne Balistreri",
+      "email": "LaverneBalistreri@hotmail.com",
+      "phone": "1-384-337-7829 x8254",
+      "role": "Lead Intranet Analyst",
+      "customerId": 8,
+      "createdAt": "2024-11-17T15:41:47.683Z",
+      "updatedAt": "2024-12-30T16:39:34.742Z"
+    },
+    {
+      "id": 25,
+      "name": "Lynn Tillman",
+      "email": "Lynn.Tillman@hotmail.com",
+      "phone": "1-784-332-3927 x232",
+      "role": "Forward Data Architect",
+      "customerId": 9,
+      "createdAt": "2024-07-05T09:42:35.602Z",
+      "updatedAt": "2024-12-30T22:46:14.444Z"
+    },
+    {
+      "id": 26,
+      "name": "Kole Rogahn",
+      "email": "Kole_Rogahn@yahoo.com",
+      "phone": "859-893-4275 x3841",
+      "role": "International Communications Technician",
+      "customerId": 9,
+      "createdAt": "2024-02-24T18:38:05.650Z",
+      "updatedAt": "2024-12-30T12:19:44.497Z"
+    },
+    {
+      "id": 27,
+      "name": "Alivia Bartoletti",
+      "email": "Alivia_Bartoletti@yahoo.com",
+      "phone": "610-736-4385 x017",
+      "role": "Dynamic Tactics Engineer",
+      "customerId": 9,
+      "createdAt": "2024-06-25T07:44:40.256Z",
+      "updatedAt": "2024-12-30T06:29:49.100Z"
+    },
+    {
+      "id": 28,
+      "name": "Sally Ritchie V",
+      "email": "Ritchie63@gmail.com",
+      "phone": "(286) 700-5215 x774",
+      "role": "Product Intranet Facilitator",
+      "customerId": 10,
+      "createdAt": "2024-02-12T12:51:36.629Z",
+      "updatedAt": "2024-12-30T16:49:24.575Z"
+    },
+    {
+      "id": 29,
+      "name": "Dion Waters",
+      "email": "Dion.Waters@yahoo.com",
+      "phone": "797.759.2461 x7863",
+      "role": "Internal Brand Agent",
+      "customerId": 10,
+      "createdAt": "2024-03-24T05:19:59.791Z",
+      "updatedAt": "2024-12-30T18:55:55.892Z"
+    },
+    {
+      "id": 30,
+      "name": "Hershel Langworth",
+      "email": "Hershel_Langworth5@yahoo.com",
+      "phone": "731.349.1892 x1832",
+      "role": "Lead Tactics Manager",
+      "customerId": 10,
+      "createdAt": "2024-11-05T20:00:29.368Z",
+      "updatedAt": "2024-12-30T23:42:34.844Z"
+    },
+    {
+      "id": 31,
+      "name": "Wyatt Zulauf",
+      "email": "Wyatt69@hotmail.com",
+      "phone": "(235) 832-9408 x501",
+      "role": "International Operations Manager",
+      "customerId": 11,
+      "createdAt": "2024-08-04T20:35:03.395Z",
+      "updatedAt": "2024-12-31T00:33:35.540Z"
+    },
+    {
+      "id": 32,
+      "name": "Emmalee Schowalter-Leuschke II",
+      "email": "Emmalee6@gmail.com",
+      "phone": "1-858-551-4688",
+      "role": "Forward Integration Representative",
+      "customerId": 11,
+      "createdAt": "2024-10-04T08:56:26.008Z",
+      "updatedAt": "2024-12-31T00:33:24.948Z"
+    },
+    {
+      "id": 33,
+      "name": "Maia Vandervort",
+      "email": "Maia21@gmail.com",
+      "phone": "1-449-255-8567 x670",
+      "role": "Principal Research Technician",
+      "customerId": 11,
+      "createdAt": "2024-04-26T17:22:43.856Z",
+      "updatedAt": "2024-12-30T10:04:05.331Z"
+    },
+    {
+      "id": 34,
+      "name": "Omari Hartmann",
+      "email": "Omari_Hartmann@yahoo.com",
+      "phone": "1-754-997-6931 x8398",
+      "role": "Global Creative Liaison",
+      "customerId": 12,
+      "createdAt": "2024-04-08T01:16:12.200Z",
+      "updatedAt": "2024-12-30T11:36:01.061Z"
+    },
+    {
+      "id": 35,
+      "name": "Cortez McKenzie-Rice",
+      "email": "Cortez.McKenzie-Rice88@yahoo.com",
+      "phone": "(923) 532-2885",
+      "role": "Lead Markets Designer",
+      "customerId": 12,
+      "createdAt": "2024-02-17T10:31:44.044Z",
+      "updatedAt": "2024-12-30T17:38:12.639Z"
+    },
+    {
+      "id": 36,
+      "name": "Jennyfer Schimmel-Emmerich",
+      "email": "Jennyfer52@hotmail.com",
+      "phone": "(453) 452-4092 x405",
+      "role": "Internal Data Architect",
+      "customerId": 12,
+      "createdAt": "2024-10-28T09:05:56.251Z",
+      "updatedAt": "2024-12-30T19:03:24.895Z"
+    },
+    {
+      "id": 37,
+      "name": "Kylee Koch-Okuneva",
+      "email": "Kylee91@gmail.com",
+      "phone": "(857) 382-9590 x10555",
+      "role": "National Tactics Officer",
+      "customerId": 13,
+      "createdAt": "2024-07-09T02:11:42.730Z",
+      "updatedAt": "2024-12-30T07:50:36.695Z"
+    },
+    {
+      "id": 38,
+      "name": "Katheryn Schumm",
+      "email": "Katheryn_Schumm70@gmail.com",
+      "phone": "(373) 511-5593 x823",
+      "role": "Global Group Associate",
+      "customerId": 13,
+      "createdAt": "2024-01-14T00:51:22.154Z",
+      "updatedAt": "2024-12-30T08:42:51.027Z"
+    },
+    {
+      "id": 39,
+      "name": "Kennith Paucek",
+      "email": "Kennith.Paucek85@gmail.com",
+      "phone": "(437) 875-7795 x19210",
+      "role": "Internal Security Specialist",
+      "customerId": 13,
+      "createdAt": "2024-09-10T04:10:05.776Z",
+      "updatedAt": "2024-12-30T15:37:49.917Z"
+    },
+    {
+      "id": 40,
+      "name": "Ervin Larkin",
+      "email": "Ahmad34@hotmail.com",
+      "phone": "(451) 728-6075",
+      "role": "National Metrics Associate",
+      "customerId": 14,
+      "createdAt": "2024-04-22T05:07:57.150Z",
+      "updatedAt": "2024-12-30T12:42:19.268Z"
+    },
+    {
+      "id": 41,
+      "name": "Robin O'Hara",
+      "email": "Precious_Toy92@hotmail.com",
+      "phone": "675.268.3134",
+      "role": "Global Marketing Strategist",
+      "customerId": 14,
+      "createdAt": "2024-10-04T21:04:43.146Z",
+      "updatedAt": "2024-12-30T09:17:49.370Z"
+    },
+    {
+      "id": 42,
+      "name": "Luke Larson",
+      "email": "Savanna_Sanford@yahoo.com",
+      "phone": "(586) 925-7334",
+      "role": "National Identity Planner",
+      "customerId": 14,
+      "createdAt": "2024-11-09T14:56:01.144Z",
+      "updatedAt": "2024-12-30T08:27:48.707Z"
+    },
+    {
+      "id": 43,
+      "name": "Dr. Kyle Rowe IV",
+      "email": "Jerrod.Rau99@yahoo.com",
+      "phone": "566.507.8992 x301",
+      "role": "Investor Usability Specialist",
+      "customerId": 15,
+      "createdAt": "2024-09-25T07:32:06.181Z",
+      "updatedAt": "2024-12-30T18:36:09.068Z"
+    },
+    {
+      "id": 44,
+      "name": "Jennifer Weimann-Kub",
+      "email": "Garry63@gmail.com",
+      "phone": "431-797-4268 x6352",
+      "role": "Principal Quality Technician",
+      "customerId": 15,
+      "createdAt": "2024-08-24T08:12:35.690Z",
+      "updatedAt": "2024-12-30T17:48:34.328Z"
+    },
+    {
+      "id": 45,
+      "name": "Patsy Friesen",
+      "email": "Koby.Smith24@yahoo.com",
+      "phone": "(462) 431-8176",
+      "role": "Senior Branding Engineer",
+      "customerId": 15,
+      "createdAt": "2024-05-03T18:40:50.750Z",
+      "updatedAt": "2024-12-30T19:47:00.057Z"
+    },
+    {
+      "id": 46,
+      "name": "Morris Deckow",
+      "email": "Mina80@gmail.com",
+      "phone": "1-317-892-3833 x300",
+      "role": "Lead Branding Planner",
+      "customerId": 16,
+      "createdAt": "2024-07-22T15:08:27.804Z",
+      "updatedAt": "2024-12-30T14:56:42.281Z"
+    },
+    {
+      "id": 47,
+      "name": "Suzanne Murray Jr.",
+      "email": "Payton.Reynolds@gmail.com",
+      "phone": "674-399-8447",
+      "role": "District Communications Assistant",
+      "customerId": 16,
+      "createdAt": "2024-08-30T20:54:43.517Z",
+      "updatedAt": "2024-12-30T11:46:25.582Z"
+    },
+    {
+      "id": 48,
+      "name": "Kristen Bradtke-Mante",
+      "email": "Jeromy_Abernathy@yahoo.com",
+      "phone": "1-271-815-6443 x10107",
+      "role": "Future Markets Associate",
+      "customerId": 16,
+      "createdAt": "2024-08-10T05:03:39.920Z",
+      "updatedAt": "2024-12-30T06:13:18.969Z"
+    },
+    {
+      "id": 49,
+      "name": "Donald Powlowski",
+      "email": "Bella.Sauer60@hotmail.com",
+      "phone": "(228) 232-2317",
+      "role": "Investor Integration Analyst",
+      "customerId": 17,
+      "createdAt": "2024-08-31T00:53:38.892Z",
+      "updatedAt": "2024-12-30T08:08:49.554Z"
+    },
+    {
+      "id": 50,
+      "name": "Marty Hintz",
+      "email": "Gail75@gmail.com",
+      "phone": "1-339-549-4575 x49703",
+      "role": "Corporate Data Architect",
+      "customerId": 17,
+      "createdAt": "2024-07-15T08:35:18.711Z",
+      "updatedAt": "2024-12-30T10:39:52.566Z"
+    },
+    {
+      "id": 51,
+      "name": "Martha Armstrong",
+      "email": "Cassandre.Emard@hotmail.com",
+      "phone": "864-739-2796 x61926",
+      "role": "Product Solutions Planner",
+      "customerId": 17,
+      "createdAt": "2024-12-08T01:34:45.039Z",
+      "updatedAt": "2024-12-30T03:10:51.241Z"
+    },
+    {
+      "id": 52,
+      "name": "Clyde Considine",
+      "email": "Jonatan_Carter41@hotmail.com",
+      "phone": "(253) 897-1949",
+      "role": "Lead Creative Representative",
+      "customerId": 18,
+      "createdAt": "2024-03-25T05:22:49.332Z",
+      "updatedAt": "2024-12-30T23:04:59.158Z"
+    },
+    {
+      "id": 53,
+      "name": "Tony Blanda",
+      "email": "Johanna.Hahn@hotmail.com",
+      "phone": "1-370-805-3393 x07123",
+      "role": "Dynamic Configuration Developer",
+      "customerId": 18,
+      "createdAt": "2024-03-16T00:05:07.004Z",
+      "updatedAt": "2024-12-30T19:23:02.429Z"
+    },
+    {
+      "id": 54,
+      "name": "Wm Gleason",
+      "email": "Sophie_Gibson@hotmail.com",
+      "phone": "514-629-9698 x97748",
+      "role": "Principal Configuration Planner",
+      "customerId": 18,
+      "createdAt": "2024-11-04T09:35:46.983Z",
+      "updatedAt": "2024-12-30T15:43:41.808Z"
+    },
+    {
+      "id": 55,
+      "name": "Johnathan Hammes",
+      "email": "Rasheed84@hotmail.com",
+      "phone": "(241) 762-9958 x903",
+      "role": "Legacy Assurance Manager",
+      "customerId": 19,
+      "createdAt": "2024-09-04T01:00:52.899Z",
+      "updatedAt": "2024-12-30T11:39:05.652Z"
+    },
+    {
+      "id": 56,
+      "name": "Doyle Hickle-Glover",
+      "email": "Johathan.Durgan75@gmail.com",
+      "phone": "347-316-6058 x176",
+      "role": "Corporate Markets Developer",
+      "customerId": 19,
+      "createdAt": "2024-11-13T09:03:18.708Z",
+      "updatedAt": "2024-12-30T06:25:03.349Z"
+    },
+    {
+      "id": 57,
+      "name": "Leroy Lang",
+      "email": "Leanne.Treutel@yahoo.com",
+      "phone": "925.577.5897 x6635",
+      "role": "Global Accounts Director",
+      "customerId": 19,
+      "createdAt": "2024-06-11T13:43:52.713Z",
+      "updatedAt": "2024-12-30T05:58:55.639Z"
+    },
+    {
+      "id": 58,
+      "name": "Kathy Shanahan",
+      "email": "Landen98@yahoo.com",
+      "phone": "1-819-683-5700 x519",
+      "role": "Chief Interactions Manager",
+      "customerId": 20,
+      "createdAt": "2024-11-20T19:39:14.378Z",
+      "updatedAt": "2024-12-30T20:31:29.080Z"
+    },
+    {
+      "id": 59,
+      "name": "Kristine Baumbach",
+      "email": "Corene_Thompson54@yahoo.com",
+      "phone": "922.968.8421 x9048",
+      "role": "Product Accountability Specialist",
+      "customerId": 20,
+      "createdAt": "2024-07-30T11:27:13.503Z",
+      "updatedAt": "2024-12-30T23:22:24.622Z"
+    },
+    {
+      "id": 60,
+      "name": "Willis Wuckert",
+      "email": "Tristian.Tillman24@yahoo.com",
+      "phone": "(760) 210-2433 x479",
+      "role": "Internal Mobility Engineer",
+      "customerId": 20,
+      "createdAt": "2024-02-13T08:10:16.426Z",
+      "updatedAt": "2024-12-30T15:21:27.832Z"
+    }
+  ],
+  "ports": [
+    {
+      "id": 1,
+      "name": "Lake Ridge Port",
+      "country": "Lebanon",
+      "coordinates": {
+        "latitude": -83.7091,
+        "longitude": 41.3854
+      },
+      "createdAt": "2024-12-18T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:14:08.266Z"
+    },
+    {
+      "id": 2,
+      "name": "East Daisyshire Port",
+      "country": "Ethiopia",
+      "coordinates": {
+        "latitude": 58.8989,
+        "longitude": -60.7624
+      },
+      "createdAt": "2024-12-22T21:37:47.140Z",
+      "updatedAt": "2024-12-30T16:31:22.646Z"
+    },
+    {
+      "id": 3,
+      "name": "Marvinboro Port",
+      "country": "Cote d'Ivoire",
+      "coordinates": {
+        "latitude": 47.2055,
+        "longitude": -70.6369
+      },
+      "createdAt": "2024-01-17T11:07:02.887Z",
+      "updatedAt": "2024-12-30T18:04:50.449Z"
+    },
+    {
+      "id": 4,
+      "name": "Santa Clarita Port",
+      "country": "Taiwan",
+      "coordinates": {
+        "latitude": -41.6227,
+        "longitude": -43.6575
+      },
+      "createdAt": "2024-11-28T19:14:31.156Z",
+      "updatedAt": "2024-12-30T13:05:55.385Z"
+    },
+    {
+      "id": 5,
+      "name": "Inglewood Port",
+      "country": "Mayotte",
+      "coordinates": {
+        "latitude": -47.1649,
+        "longitude": -82.8235
+      },
+      "createdAt": "2024-02-20T09:02:06.732Z",
+      "updatedAt": "2024-12-30T13:00:04.449Z"
+    },
+    {
+      "id": 6,
+      "name": "West Harbor Port",
+      "country": "Canada",
+      "coordinates": {
+        "latitude": 43.6532,
+        "longitude": -79.3832
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 7,
+      "name": "Southern Star Port",
+      "country": "Brazil",
+      "coordinates": {
+        "latitude": -23.5505,
+        "longitude": -46.6333
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 8,
+      "name": "Northern Beacon Port",
+      "country": "Germany",
+      "coordinates": {
+        "latitude": 52.5200,
+        "longitude": 13.4050
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 9,
+      "name": "Central Lake Port",
+      "country": "Sweden",
+      "coordinates": {
+        "latitude": 59.3293,
+        "longitude": 18.0686
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 10,
+      "name": "Eastern Shore Port",
+      "country": "Australia",
+      "coordinates": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 11,
+      "name": "Northern Gateway Port",
+      "country": "Norway",
+      "coordinates": {
+        "latitude": 59.9139,
+        "longitude": 10.7522
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 12,
+      "name": "Sunrise Port",
+      "country": "Japan",
+      "coordinates": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 13,
+      "name": "Golden Gate Port",
+      "country": "USA",
+      "coordinates": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 14,
+      "name": "Pacific Rim Port",
+      "country": "Chile",
+      "coordinates": {
+        "latitude": -33.4489,
+        "longitude": -70.6693
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 15,
+      "name": "Atlantic Breeze Port",
+      "country": "Ireland",
+      "coordinates": {
+        "latitude": 53.3498,
+        "longitude": -6.2603
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 16,
+      "name": "Coral Cove Port",
+      "country": "Philippines",
+      "coordinates": {
+        "latitude": 14.5995,
+        "longitude": 120.9842
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 17,
+      "name": "Emerald Isle Port",
+      "country": "Iceland",
+      "coordinates": {
+        "latitude": 64.1265,
+        "longitude": -21.8174
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 18,
+      "name": "Silver Sands Port",
+      "country": "South Africa",
+      "coordinates": {
+        "latitude": -33.9249,
+        "longitude": 18.4241
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 19,
+      "name": "Ruby Reef Port",
+      "country": "New Zealand",
+      "coordinates": {
+        "latitude": -36.8485,
+        "longitude": 174.7633
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    },
+    {
+      "id": 20,
+      "name": "Crystal Harbor Port",
+      "country": "Singapore",
+      "coordinates": {
+        "latitude": 1.3521,
+        "longitude": 103.8198
+      },
+      "createdAt": "2024-12-30T16:30:12.854Z",
+      "updatedAt": "2024-12-30T16:30:12.854Z"
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "Greenholt, Rau and Beatty",
+      "type": "Broker",
+      "contactEmail": "Scarlett.Flatley@hotmail.com",
+      "contactPhone": "374.714.6973 x7662",
+      "address": "4058 Rosenbaum Forge",
+      "servicesProvided": "Adsum verumtamen aestivus clarus.",
+      "companyId": 1,
+      "createdAt": "2024-05-11T22:48:25.193Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 2,
+      "name": "Sporer and Sons",
+      "type": "Carrier",
+      "contactEmail": "Madge.Herzog-Batz@gmail.com",
+      "contactPhone": "853.351.2015 x332",
+      "address": "8383 Heloise Highway",
+      "servicesProvided": "Vesica degenero coma.",
+      "companyId": 1,
+      "createdAt": "2024-07-07T23:40:38.297Z",
+      "updatedAt": "2024-12-31T01:40:18.754Z"
+    },
+    {
+      "id": 3,
+      "name": "Satterfield - Schumm",
+      "type": "Broker",
+      "contactEmail": "Lily.Dach@yahoo.com",
+      "contactPhone": "1-490-580-6623 x37415",
+      "address": "404 Bell Lane",
+      "servicesProvided": "Caste antea officia collum.",
+      "companyId": 1,
+      "createdAt": "2024-04-05T08:27:30.607Z",
+      "updatedAt": "2024-12-30T17:13:27.907Z"
+    },
+    {
+      "id": 4,
+      "name": "Grady - Trantow",
+      "type": "Warehouse",
+      "contactEmail": "Elizabeth.Kunde95@gmail.com",
+      "contactPhone": "1-828-491-7228 x4997",
+      "address": "20005 Celestine Forges",
+      "servicesProvided": "Veniam conturbo denique.",
+      "companyId": 2,
+      "createdAt": "2024-03-22T04:05:55.037Z",
+      "updatedAt": "2024-12-30T07:06:25.626Z"
+    },
+    {
+      "id": 5,
+      "name": "Anderson - Walter",
+      "type": "Carrier",
+      "contactEmail": "Gerda_Lynch28@gmail.com",
+      "contactPhone": "809.281.8183",
+      "address": "915 Fay Junctions",
+      "servicesProvided": "Strenuus aequus exercitationem adeo.",
+      "companyId": 2,
+      "createdAt": "2024-06-27T15:19:04.847Z",
+      "updatedAt": "2024-12-31T01:19:17.218Z"
+    },
+    {
+      "id": 6,
+      "name": "Stoltenberg - Collier",
+      "type": "Carrier",
+      "contactEmail": "Rowena_Lindgren35@gmail.com",
+      "contactPhone": "1-983-705-5808 x44222",
+      "address": "534 Cade Fall",
+      "servicesProvided": "Cuius degero contra arma architecto tubineus sunt patior.",
+      "companyId": 2,
+      "createdAt": "2024-04-14T08:02:33.690Z",
+      "updatedAt": "2024-12-30T21:21:31.281Z"
+    },
+    {
+      "id": 7,
+      "name": "Global Logistics Partners",
+      "type": "Carrier",
+      "contactEmail": "contact@globallogistics.com",
+      "contactPhone": "1-800-555-0199",
+      "address": "1234 Elm Street, Springfield, USA",
+      "servicesProvided": "International shipping and logistics solutions.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 8,
+      "name": "TransWorld Brokers",
+      "type": "Broker",
+      "contactEmail": "info@transworldbrokers.com",
+      "contactPhone": "1-800-555-0123",
+      "address": "5678 Oak Avenue, Metropolis, USA",
+      "servicesProvided": "Freight brokering and shipment management.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 9,
+      "name": "Oceanic Carriers",
+      "type": "Carrier",
+      "contactEmail": "support@oceaniccarriers.com",
+      "contactPhone": "1-800-555-0456",
+      "address": "9102 Sea Breeze Blvd, Miami, USA",
+      "servicesProvided": "Global freight transportation services.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 10,
+      "name": "Vertex Logistics",
+      "type": "Warehouse",
+      "contactEmail": "contact@vertexlogistics.com",
+      "contactPhone": "1-800-555-0789",
+      "address": "1357 Vertex Road, Denver, USA",
+      "servicesProvided": "Storage and distribution solutions.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 11,
+      "name": "Rapid Transit Brokers",
+      "type": "Broker",
+      "contactEmail": "sales@rapidtransitbrokers.com",
+      "contactPhone": "1-800-555-1010",
+      "address": "2468 Transit Avenue, Boston, USA",
+      "servicesProvided": "Efficient freight brokerage services.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 12,
+      "name": "Prime Logistics",
+      "type": "Carrier",
+      "contactEmail": "info@primelogistics.com",
+      "contactPhone": "1-800-555-1313",
+      "address": "3690 Prime Street, Orlando, USA",
+      "servicesProvided": "Comprehensive logistics and supply chain services.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 13,
+      "name": "Elite Shipping Partners",
+      "type": "Carrier",
+      "contactEmail": "contact@eliteshipping.com",
+      "contactPhone": "1-800-555-1414",
+      "address": "4820 Elite Boulevard, Atlanta, USA",
+      "servicesProvided": "Premium shipping and logistics services.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 14,
+      "name": "Northern Storage Solutions",
+      "type": "Warehouse",
+      "contactEmail": "info@northernstorage.com",
+      "contactPhone": "1-800-555-1515",
+      "address": "5030 North Storage Rd, Minneapolis, USA",
+      "servicesProvided": "Secure storage and inventory management.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 15,
+      "name": "Skyline Brokers",
+      "type": "Broker",
+      "contactEmail": "support@skylinebrokers.com",
+      "contactPhone": "1-800-555-1616",
+      "address": "6240 Skyline Street, Las Vegas, USA",
+      "servicesProvided": "Brokerage services for air and sea freight.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 16,
+      "name": "Metro Logistics",
+      "type": "Carrier",
+      "contactEmail": "info@metrologistics.com",
+      "contactPhone": "1-800-555-1717",
+      "address": "7450 Metro Drive, Portland, USA",
+      "servicesProvided": "Urban logistics and last-mile delivery.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 17,
+      "name": "Global Freight Services",
+      "type": "Carrier",
+      "contactEmail": "contact@globalfreight.com",
+      "contactPhone": "1-800-555-1818",
+      "address": "8660 Global Freight Ave, Miami, USA",
+      "servicesProvided": "Worldwide freight and cargo transportation.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 18,
+      "name": "Central Warehousing",
+      "type": "Warehouse",
+      "contactEmail": "info@centralwarehousing.com",
+      "contactPhone": "1-800-555-1919",
+      "address": "9870 Central Warehouse Blvd, Detroit, USA",
+      "servicesProvided": "Centralized warehousing and distribution.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 19,
+      "name": "Express Freight Brokers",
+      "type": "Broker",
+      "contactEmail": "support@expressfreightbrokers.com",
+      "contactPhone": "1-800-555-2020",
+      "address": "10880 Express Blvd, Denver, USA",
+      "servicesProvided": "Fast freight brokerage for urgent shipments.",
+      "companyId": 1,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    },
+    {
+      "id": 20,
+      "name": "Sunshine Logistics",
+      "type": "Carrier",
+      "contactEmail": "info@sunshinelogistics.com",
+      "contactPhone": "1-800-555-2121",
+      "address": "11990 Sunshine Road, Orlando, USA",
+      "servicesProvided": "Reliable logistics and transportation services.",
+      "companyId": 2,
+      "createdAt": "2024-12-30T22:25:05.721Z",
+      "updatedAt": "2024-12-30T22:25:05.721Z"
+    }
+  ],
+  "shipments": [
+    {
+      "id": 1,
+      "shipmentNumber": "GL-4377",
+      "contents": "Introducing the Democratic Republic of the Congo-inspired Mouse, blending simplistic style with local craftsmanship",
+      "quantity": "886 units",
+      "departureDate": "2025-09-18",
+      "arrivalDate": "2025-10-27",
+      "status": "In Transit",
+      "itinerary": [3, 1, 4],
+      "departurePortId": 2,
+      "arrivalPortId": 4,
+      "mainContactId": 22,
+      "customerId": 8,
+      "billingId": 1,
+      "createdAt": "2024-08-17T18:27:02.691Z",
+      "updatedAt": "2024-12-30T08:40:55.341Z"
+    },
+    {
+      "id": 2,
+      "shipmentNumber": "GL-7675",
+      "contents": "Featuring Niobium-enhanced technology, our Cheese offers unparalleled noxious performance",
+      "quantity": "680 units",
+      "departureDate": "2025-12-10",
+      "arrivalDate": "2025-03-11",
+      "status": "In Transit",
+      "itinerary": [4, 2, 3],
+      "departurePortId": 2,
+      "arrivalPortId": 10,
+      "mainContactId": 13,
+      "customerId": 5,
+      "billingId": 2,
+      "createdAt": "2024-11-08T18:00:25.501Z",
+      "updatedAt": "2024-12-30T17:00:32.780Z"
+    },
+    {
+      "id": 3,
+      "shipmentNumber": "GL-1128",
+      "contents": "Savor the crunchy essence in our Salad, designed for distant culinary adventures",
+      "quantity": "814 units",
+      "departureDate": "2025-10-02",
+      "arrivalDate": "2025-01-12",
+      "status": "Pending",
+      "itinerary": [2, 4, 1],
+      "departurePortId": 2,
+      "arrivalPortId": 1,
+      "mainContactId": 49,
+      "customerId": 17,
+      "billingId": 3,
+      "createdAt": "2024-05-22T13:06:09.678Z",
+      "updatedAt": "2024-12-31T00:13:45.255Z"
+    },
+    {
+      "id": 4,
+      "shipmentNumber": "GL-3089",
+      "contents": "Ergonomic Salad made with Cotton for all-day alert support",
+      "quantity": "1000 units",
+      "departureDate": "2025-05-15",
+      "arrivalDate": "2025-05-29",
+      "status": "Delayed",
+      "itinerary": [4, 1, 3],
+      "departurePortId": 5,
+      "arrivalPortId": 2,
+      "mainContactId": 52,
+      "customerId": 18,
+      "billingId": 4,
+      "createdAt": "2024-05-17T22:05:17.268Z",
+      "updatedAt": "2024-12-30T19:17:20.354Z"
+    },
+    {
+      "id": 5,
+      "shipmentNumber": "GL-1645",
+      "contents": "Refined Soap designed with Frozen for growing performance",
+      "quantity": "137 units",
+      "departureDate": "2025-08-10",
+      "arrivalDate": "2025-09-26",
+      "status": "Pending",
+      "itinerary": [2, 4, 1],
+      "departurePortId": 3,
+      "arrivalPortId": 2,
+      "mainContactId": 31,
+      "customerId": 11,
+      "billingId": 5,
+      "createdAt": "2024-04-24T05:25:23.651Z",
+      "updatedAt": "2024-12-30T03:30:23.309Z"
+    },
+    {
+      "id": 6,
+      "shipmentNumber": "GL-3093",
+      "contents": "New ivory Chips with ergonomic design for clean comfort",
+      "quantity": "824 units",
+      "departureDate": "2025-11-27",
+      "arrivalDate": "2025-02-26",
+      "status": "Delivered",
+      "itinerary": [3, 1, 2],
+      "departurePortId": 3,
+      "arrivalPortId": 5,
+      "mainContactId": 31,
+      "customerId": 11,
+      "billingId": 6,
+      "createdAt": "2024-09-18T04:42:21.172Z",
+      "updatedAt": "2024-12-31T00:46:55.356Z"
+    },
+    {
+      "id": 7,
+      "shipmentNumber": "GL-9751",
+      "contents": "The sleek and prestigious Hat comes with grey LED lighting for smart functionality",
+      "quantity": "442 units",
+      "departureDate": "2025-01-25",
+      "arrivalDate": "2025-11-29",
+      "status": "Delivered",
+      "itinerary": [2, 1, 4],
+      "departurePortId": 4,
+      "arrivalPortId": 15,
+      "mainContactId": 31,
+      "customerId": 11,
+      "billingId": 7,
+      "createdAt": "2024-04-23T09:47:15.620Z",
+      "updatedAt": "2024-12-30T07:38:49.809Z"
+    },
+    {
+      "id": 8,
+      "shipmentNumber": "GL-7125",
+      "contents": "Professional-grade Pants perfect for velvety training and recreational use",
+      "quantity": "605 units",
+      "departureDate": "2025-04-25",
+      "arrivalDate": "2025-01-29",
+      "status": "Delivered",
+      "itinerary": [2, 4, 5],
+      "departurePortId": 2,
+      "arrivalPortId": 4,
+      "mainContactId": 60,
+      "customerId": 20,
+      "billingId": 8,
+      "createdAt": "2024-01-08T01:59:40.514Z",
+      "updatedAt": "2024-12-30T20:23:45.507Z"
+    },
+    {
+      "id": 9,
+      "shipmentNumber": "GL-9906",
+      "contents": "Experience the ivory brilliance of our Pants, perfect for ecstatic environments",
+      "quantity": "258 units",
+      "departureDate": "2025-04-17",
+      "arrivalDate": "2025-04-19",
+      "status": "Delivered",
+      "itinerary": [5, 3, 1],
+      "departurePortId": 3,
+      "arrivalPortId": 5,
+      "mainContactId": 34,
+      "customerId": 12,
+      "billingId": 9,
+      "createdAt": "2024-12-30T09:19:09.313Z",
+      "updatedAt": "2024-12-30T08:26:38.006Z"
+    },
+    {
+      "id": 10,
+      "shipmentNumber": "GL-1599",
+      "contents": "New Tuna model with 41 GB RAM, 438 GB storage, and peaceful features",
+      "quantity": "407 units",
+      "departureDate": "2025-10-11",
+      "arrivalDate": "2025-06-21",
+      "status": "Delayed",
+      "itinerary": [5, 3, 4],
+      "departurePortId": 2,
+      "arrivalPortId": 16,
+      "mainContactId": 17,
+      "customerId": 6,
+      "billingId": 10,
+      "createdAt": "2024-06-09T08:52:44.372Z",
+      "updatedAt": "2024-12-30T19:54:25.401Z"
+    },
+    {
+      "id": 11,
+      "shipmentNumber": "GL-4690",
+      "contents": "Discover the frog-like agility of our Computer, perfect for huge users",
+      "quantity": "919 units",
+      "departureDate": "2025-11-25",
+      "arrivalDate": "2025-02-08",
+      "status": "Delivered",
+      "itinerary": [4, 1, 2],
+      "departurePortId": 2,
+      "arrivalPortId": 5,
+      "mainContactId": 39,
+      "customerId": 13,
+      "billingId": 11,
+      "createdAt": "2024-03-21T23:34:48.301Z",
+      "updatedAt": "2024-12-30T18:41:34.122Z"
+    },
+    {
+      "id": 12,
+      "shipmentNumber": "GL-8081",
+      "contents": "Our tangy-inspired Cheese brings a taste of luxury to your international lifestyle",
+      "quantity": "493 units",
+      "departureDate": "2025-05-06",
+      "arrivalDate": "2025-06-10",
+      "status": "In Transit",
+      "itinerary": [1, 2, 3],
+      "departurePortId": 4,
+      "arrivalPortId": 2,
+      "mainContactId": 24,
+      "customerId": 8,
+      "billingId": 12,
+      "createdAt": "2024-10-17T16:57:06.812Z",
+      "updatedAt": "2024-12-30T16:59:14.255Z"
+    },
+    {
+      "id": 13,
+      "shipmentNumber": "GL-8586",
+      "contents": "Discover the rhinoceros-like agility of our Hat, perfect for trim users",
+      "quantity": "736 units",
+      "departureDate": "2025-06-03",
+      "arrivalDate": "2025-05-12",
+      "status": "Delayed",
+      "itinerary": [5, 3, 1],
+      "departurePortId": 1,
+      "arrivalPortId": 4,
+      "mainContactId": 44,
+      "customerId": 15,
+      "billingId": 13,
+      "createdAt": "2024-06-20T02:53:20.030Z",
+      "updatedAt": "2024-12-30T18:02:29.883Z"
+    },
+    {
+      "id": 14,
+      "shipmentNumber": "GL-3943",
+      "contents": "Featuring Hydrogen-enhanced technology, our Fish offers unparalleled proper performance",
+      "quantity": "629 units",
+      "departureDate": "2025-01-28",
+      "arrivalDate": "2025-03-28",
+      "status": "In Transit",
+      "itinerary": [5, 4, 1],
+      "departurePortId": 2,
+      "arrivalPortId": 1,
+      "mainContactId": 28,
+      "customerId": 10,
+      "billingId": 14,
+      "createdAt": "2024-10-03T09:30:42.222Z",
+      "updatedAt": "2024-12-30T04:24:56.545Z"
+    },
+    {
+      "id": 15,
+      "shipmentNumber": "GL-1301",
+      "contents": "Gorgeous Pizza designed with Rubber for frail performance",
+      "quantity": "444 units",
+      "departureDate": "2025-05-05",
+      "arrivalDate": "2025-08-21",
+      "status": "Pending",
+      "itinerary": [3, 2, 1],
+      "departurePortId": 1,
+      "arrivalPortId": 5,
+      "mainContactId": 26,
+      "customerId": 9,
+      "billingId": 15,
+      "createdAt": "2024-01-28T14:45:53.395Z",
+      "updatedAt": "2024-12-30T18:38:51.668Z"
+    },
+    {
+      "id": 16,
+      "shipmentNumber": "GL-2413",
+      "contents": "New lime Sausages with ergonomic design for rare comfort",
+      "quantity": "482 units",
+      "departureDate": "2025-03-14",
+      "arrivalDate": "2025-12-28",
+      "status": "Pending",
+      "itinerary": [2, 3, 5],
+      "departurePortId": 2,
+      "arrivalPortId": 12,
+      "mainContactId": 7,
+      "customerId": 3,
+      "billingId": 16,
+      "createdAt": "2024-09-05T18:40:54.985Z",
+      "updatedAt": "2024-12-30T07:33:40.631Z"
+    },
+    {
+      "id": 17,
+      "shipmentNumber": "GL-4821",
+      "contents": "Professional-grade Ball perfect for known training and recreational use",
+      "quantity": "670 units",
+      "departureDate": "2025-10-08",
+      "arrivalDate": "2025-03-20",
+      "status": "Pending",
+      "itinerary": [3, 2, 1],
+      "departurePortId": 2,
+      "arrivalPortId": 5,
+      "mainContactId": 59,
+      "customerId": 20,
+      "billingId": 17,
+      "createdAt": "2024-08-05T13:53:54.701Z",
+      "updatedAt": "2024-12-30T14:30:27.031Z"
+    },
+    {
+      "id": 18,
+      "shipmentNumber": "GL-4469",
+      "contents": "Experience the fuchsia brilliance of our Shirt, perfect for fussy environments",
+      "quantity": "666 units",
+      "departureDate": "2025-11-16",
+      "arrivalDate": "2025-06-18",
+      "status": "Delivered",
+      "itinerary": [1, 4, 3],
+      "departurePortId": 4,
+      "arrivalPortId": 14,
+      "mainContactId": 57,
+      "customerId": 19,
+      "billingId": 18,
+      "createdAt": "2024-11-14T00:47:57.672Z",
+      "updatedAt": "2024-12-30T07:11:57.832Z"
+    },
+    {
+      "id": 19,
+      "shipmentNumber": "GL-9393",
+      "contents": "The sleek and blushing Sausages comes with azure LED lighting for smart functionality",
+      "quantity": "312 units",
+      "departureDate": "2025-05-05",
+      "arrivalDate": "2025-02-12",
+      "status": "Delivered",
+      "itinerary": [2, 5, 1],
+      "departurePortId": 1,
+      "arrivalPortId": 5,
+      "mainContactId": 55,
+      "customerId": 19,
+      "billingId": 19,
+      "createdAt": "2024-02-15T13:14:21.254Z",
+      "updatedAt": "2024-12-30T16:00:23.070Z"
+    },
+    {
+      "id": 20,
+      "shipmentNumber": "GL-4517",
+      "contents": "Our crunchy-inspired Keyboard brings a taste of luxury to your regal lifestyle",
+      "quantity": "123 units",
+      "departureDate": "2025-08-26",
+      "arrivalDate": "2025-04-30",
+      "status": "Delivered",
+      "itinerary": [4, 1, 3],
+      "departurePortId": 5,
+      "arrivalPortId": 3,
+      "mainContactId": 32,
+      "customerId": 11,
+      "billingId": 20,
+      "createdAt": "2024-09-11T09:01:24.332Z",
+      "updatedAt": "2024-12-30T23:36:58.748Z"
+    }
+  ],
+  "billing": [
+    {
+      "id": 1,
+      "amount": 6541.18,
+      "date": "2025-03-29",
+      "type": "Payment",
+      "from": 10,
+      "to": 4,
+      "description": "Tabula ubi aut anser aetas.",
+      "shipmentId": 3,
+      "createdAt": "2024-03-11T04:11:49.719Z",
+      "updatedAt": "2024-12-30T15:06:07.319Z"
+    },
+    {
+      "id": 2,
+      "amount": 5464.02,
+      "date": "2025-06-20",
+      "type": "Payment",
+      "from": 17,
+      "to": 5,
+      "description": "Deludo attero abduco creptio adiuvo accusator adipisci sursum quam.",
+      "shipmentId": 2,
+      "createdAt": "2024-08-27T11:06:46.176Z",
+      "updatedAt": "2024-12-30T21:31:24.154Z"
+    },
+    {
+      "id": 3,
+      "amount": 3861.41,
+      "date": "2025-09-12",
+      "type": "Invoice",
+      "from": 5,
+      "to": 8,
+      "description": "Benevolentia volup quis defetiscor aegrus numquam varius nemo.",
+      "shipmentId": 16,
+      "createdAt": "2024-07-01T18:19:33.884Z",
+      "updatedAt": "2024-12-31T00:58:50.528Z"
+    },
+    {
+      "id": 4,
+      "amount": 9132.24,
+      "date": "2025-07-01",
+      "type": "Payment",
+      "from": 9,
+      "to": 2,
+      "description": "Depulso caelum varietas occaecati cunctatio.",
+      "shipmentId": 20,
+      "createdAt": "2024-10-01T20:47:44.118Z",
+      "updatedAt": "2024-12-30T15:00:52.755Z"
+    },
+    {
+      "id": 5,
+      "amount": 6798.02,
+      "date": "2025-08-12",
+      "type": "Invoice",
+      "from": 6,
+      "to": 1,
+      "description": "Culpo abduco ea canto.",
+      "shipmentId": 5,
+      "createdAt": "2024-10-08T20:30:06.028Z",
+      "updatedAt": "2024-12-30T07:12:44.436Z"
+    },
+    {
+      "id": 6,
+      "amount": 8707.52,
+      "date": "2025-04-28",
+      "type": "Invoice",
+      "from": 4,
+      "to": 3,
+      "description": "Sunt facilis sub cunae suffragium concedo celer.",
+      "shipmentId": 10,
+      "createdAt": "2024-08-29T07:33:44.380Z",
+      "updatedAt": "2024-12-31T01:11:40.763Z"
+    },
+    {
+      "id": 7,
+      "amount": 7050.08,
+      "date": "2025-01-15",
+      "type": "Payment",
+      "from": 3,
+      "to": 14,
+      "description": "Ullam laborum degero audio.",
+      "shipmentId": 8,
+      "createdAt": "2024-08-30T05:23:52.576Z",
+      "updatedAt": "2024-12-30T16:38:41.352Z"
+    },
+    {
+      "id": 8,
+      "amount": 4952.41,
+      "date": "2025-02-05",
+      "type": "Invoice",
+      "from": 11,
+      "to": 4,
+      "description": "Culpo abduco ea canto.",
+      "shipmentId": 7,
+      "createdAt": "2024-04-01T15:18:51.318Z",
+      "updatedAt": "2024-12-30T21:00:40.105Z"
+    },
+    {
+      "id": 9,
+      "amount": 6716.78,
+      "date": "2025-04-21",
+      "type": "Invoice",
+      "from": 10,
+      "to": 4,
+      "description": "Vociferor amitto aliqua voluptatem ciminatio quos.",
+      "shipmentId": 16,
+      "createdAt": "2024-05-09T19:20:42.744Z",
+      "updatedAt": "2024-12-30T17:56:41.366Z"
+    },
+    {
+      "id": 10,
+      "amount": 2336.42,
+      "date": "2025-12-05",
+      "type": "Invoice",
+      "from": 15,
+      "to": 3,
+      "description": "Arto caelum sapiente esse auxilium tribuo adsum administratio.",
+      "shipmentId": 1,
+      "createdAt": "2024-07-31T17:51:48.286Z",
+      "updatedAt": "2024-12-30T10:13:45.508Z"
+    },
+    {
+      "id": 11,
+      "amount": 2475.9,
+      "date": "2025-01-14",
+      "type": "Invoice",
+      "from": 5,
+      "to": 6,
+      "description": "Cui cupiditate infit voluptatem solus vaco theatrum cedo auctor.",
+      "shipmentId": 5,
+      "createdAt": "2024-09-11T11:09:47.582Z",
+      "updatedAt": "2024-12-30T07:06:28.146Z"
+    },
+    {
+      "id": 12,
+      "amount": 7920.96,
+      "date": "2025-05-18",
+      "type": "Invoice",
+      "from": 1,
+      "to": 3,
+      "description": "Libero subseco tamisium in turpis canonicus.",
+      "shipmentId": 17,
+      "createdAt": "2024-03-21T23:38:29.387Z",
+      "updatedAt": "2024-12-30T08:32:13.037Z"
+    },
+    {
+      "id": 13,
+      "amount": 6847.1,
+      "date": "2025-10-28",
+      "type": "Payment",
+      "from": 2,
+      "to": 1,
+      "description": "Ducimus quibusdam vulgaris advenio stipes cogo solium.",
+      "shipmentId": 11,
+      "createdAt": "2024-08-11T11:08:33.867Z",
+      "updatedAt": "2024-12-30T21:04:19.360Z"
+    },
+    {
+      "id": 14,
+      "amount": 5781.18,
+      "date": "2025-06-16",
+      "type": "Payment",
+      "from": 14,
+      "to": 3,
+      "description": "Defungo soluta spargo pecco tabernus creo sequi rerum defessus pectus.",
+      "shipmentId": 11,
+      "createdAt": "2024-08-05T04:15:39.759Z",
+      "updatedAt": "2024-12-30T09:39:11.796Z"
+    },
+    {
+      "id": 15,
+      "amount": 9132.51,
+      "date": "2025-08-27",
+      "type": "Payment",
+      "from": 10,
+      "to": 3,
+      "description": "Valetudo decerno clibanus vociferor vergo.",
+      "shipmentId": 10,
+      "createdAt": "2024-01-22T22:09:33.336Z",
+      "updatedAt": "2024-12-30T13:20:32.020Z"
+    },
+    {
+      "id": 16,
+      "amount": 3987.35,
+      "date": "2025-06-04",
+      "type": "Payment",
+      "from": 6,
+      "to": 10,
+      "description": "Sollicito vito quaerat tero.",
+      "shipmentId": 10,
+      "createdAt": "2024-01-21T20:25:56.567Z",
+      "updatedAt": "2024-12-30T02:31:24.178Z"
+    },
+    {
+      "id": 17,
+      "amount": 4510.5,
+      "date": "2025-06-16",
+      "type": "Payment",
+      "from": 5,
+      "to": 9,
+      "description": "Tunc tenuis agnitio catena bis.",
+      "shipmentId": 12,
+      "createdAt": "2024-10-05T16:18:29.095Z",
+      "updatedAt": "2024-12-30T05:14:27.884Z"
+    },
+    {
+      "id": 18,
+      "amount": 5681.11,
+      "date": "2025-04-24",
+      "type": "Payment",
+      "from": 6,
+      "to": 16,
+      "description": "Aeternus demoror carpo advoco ab stabilis tendo coepi agnosco.",
+      "shipmentId": 3,
+      "createdAt": "2024-08-07T20:04:22.423Z",
+      "updatedAt": "2024-12-30T12:37:16.483Z"
+    },
+    {
+      "id": 19,
+      "amount": 3602.46,
+      "date": "2025-06-19",
+      "type": "Invoice",
+      "from": 9,
+      "to": 5,
+      "description": "Ullam adulatio damnatio cito virgo arbor asper.",
+      "shipmentId": 1,
+      "createdAt": "2024-01-30T18:46:54.724Z",
+      "updatedAt": "2024-12-30T17:12:50.905Z"
+    },
+    {
+      "id": 20,
+      "amount": 2130.24,
+      "date": "2025-10-30",
+      "type": "Invoice",
+      "from": 11,
+      "to": 4,
+      "description": "Quasi ventosus tunc stips copia doloremque fugit.",
+      "shipmentId": 13,
+      "createdAt": "2024-04-28T07:39:57.687Z",
+      "updatedAt": "2024-12-30T20:38:11.851Z"
+    }
+  ],
+  "quotations": [
+    {
+      "id": 1,
+      "userId": 6,
+      "customerId": 2,
+      "origin": {
+        "portId": 1
+      },
+      "destination": {
+        "portId": 4
+      },
+      "goodsType": "Parishables",
+      "weight": 250,
+      "dimensions": "2m x 1.5m x 1m",
+      "serviceType": "Express",
+      "estimatedCost": 1500,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 4,
+      "customerId": 1,
+      "origin": {
+        "portId": 3
+      },
+      "destination": {
+        "portId": 2
+      },
+      "goodsType": "Automobiles",
+      "weight": 15000,
+      "dimensions": "2m x 5m x 10m",
+      "serviceType": "Standard",
+      "estimatedCost": 2500,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "customerId": 4,
+      "origin": {
+        "portId": 2
+      },
+      "destination": {
+        "portId": 3
+      },
+      "goodsType": "Electronics",
+      "weight": 1050,
+      "dimensions": "2m x 1.5m x 4m",
+      "serviceType": "Overnight",
+      "estimatedCost": 5000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "customerId": 5,
+      "origin": {
+        "portId": 6
+      },
+      "destination": {
+        "portId": 7
+      },
+      "goodsType": "Furniture",
+      "weight": 500,
+      "dimensions": "3m x 2m x 1.5m",
+      "serviceType": "Standard",
+      "estimatedCost": 3000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "userId": 7,
+      "customerId": 10,
+      "origin": {
+        "portId": 8
+      },
+      "destination": {
+        "portId": 9
+      },
+      "goodsType": "Automobiles",
+      "weight": 2000,
+      "dimensions": "4m x 2m x 1.8m",
+      "serviceType": "Express",
+      "estimatedCost": 5000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "customerId": 3,
+      "origin": {
+        "portId": 10
+      },
+      "destination": {
+        "portId": 11
+      },
+      "goodsType": "Books",
+      "weight": 300,
+      "dimensions": "1m x 1m x 1m",
+      "serviceType": "Standard",
+      "estimatedCost": 1800,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "userId": 5,
+      "customerId": 7,
+      "origin": {
+        "portId": 12
+      },
+      "destination": {
+        "portId": 13
+      },
+      "goodsType": "Clothing",
+      "weight": 800,
+      "dimensions": "2m x 1m x 1m",
+      "serviceType": "Express",
+      "estimatedCost": 2200,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "customerId": 9,
+      "origin": {
+        "portId": 14
+      },
+      "destination": {
+        "portId": 15
+      },
+      "goodsType": "Machinery",
+      "weight": 5000,
+      "dimensions": "5m x 3m x 2m",
+      "serviceType": "Overnight",
+      "estimatedCost": 7500,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "customerId": 12,
+      "origin": {
+        "portId": 16
+      },
+      "destination": {
+        "portId": 17
+      },
+      "goodsType": "Pharmaceuticals",
+      "weight": 1200,
+      "dimensions": "2m x 2m x 2m",
+      "serviceType": "Standard",
+      "estimatedCost": 4000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "customerId": 14,
+      "origin": {
+        "portId": 18
+      },
+      "destination": {
+        "portId": 19
+      },
+      "goodsType": "Furniture",
+      "weight": 2500,
+      "dimensions": "4m x 3m x 2m",
+      "serviceType": "Express",
+      "estimatedCost": 6000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "userId": 4,
+      "customerId": 6,
+      "origin": {
+        "portId": 20
+      },
+      "destination": {
+        "portId": 1
+      },
+      "goodsType": "Electronics",
+      "weight": 1800,
+      "dimensions": "3m x 2m x 1.5m",
+      "serviceType": "Overnight",
+      "estimatedCost": 5500,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "userId": 6,
+      "customerId": 11,
+      "origin": {
+        "portId": 5
+      },
+      "destination": {
+        "portId": 4
+      },
+      "goodsType": "Office Supplies",
+      "weight": 400,
+      "dimensions": "1.5m x 1m x 0.5m",
+      "serviceType": "Standard",
+      "estimatedCost": 2000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "customerId": 8,
+      "origin": {
+        "portId": 9
+      },
+      "destination": {
+        "portId": 10
+      },
+      "goodsType": "Automobiles",
+      "weight": 2000,
+      "dimensions": "4m x 2m x 1.8m",
+      "serviceType": "Express",
+      "estimatedCost": 5000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "userId": 14,
+      "customerId": 10,
+      "origin": {
+        "portId": 7
+      },
+      "destination": {
+        "portId": 5
+      },
+      "goodsType": "Electronics",
+      "weight": 800,
+      "dimensions": "2m x 1.5m x 4m",
+      "serviceType": "Express",
+      "estimatedCost": 5000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 15,
+      "userId": 10,
+      "customerId": 19,
+      "origin": {
+        "portId": 12
+      },
+      "destination": {
+        "portId": 13
+      },
+      "goodsType": "Electronics",
+      "weight": 1200,
+      "dimensions": "3m x 1.5m x 2m",
+      "serviceType": "Standard",
+      "estimatedCost": 4000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 16,
+      "userId": 6,
+      "customerId": 3,
+      "origin": {
+        "portId": 1
+      },
+      "destination": {
+        "portId": 5
+      },
+      "goodsType": "Books",
+      "weight": 300,
+      "dimensions": "1m x 1m x 1m",
+      "serviceType": "Standard",
+      "estimatedCost": 1800,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 17,
+      "userId": 5,
+      "customerId": 7,
+      "origin": {
+        "portId": 4
+      },
+      "destination": {
+        "portId": 6
+      },
+      "goodsType": "Clothing",
+      "weight": 800,
+      "dimensions": "2m x 1m x 1m",
+      "serviceType": "Express",
+      "estimatedCost": 2200,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 18,
+      "userId": 8,
+      "customerId": 9,
+      "origin": {
+        "portId": 14
+      },
+      "destination": {
+        "portId": 15
+      },
+      "goodsType": "Machinery",
+      "weight": 5000,
+      "dimensions": "5m x 3m x 2m",
+      "serviceType": "Overnight",
+      "estimatedCost": 7500,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 19,
+      "userId": 9,
+      "customerId": 12,
+      "origin": {
+        "portId": 16
+      },
+      "destination": {
+        "portId": 17
+      },
+      "goodsType": "Pharmaceuticals",
+      "weight": 1200,
+      "dimensions": "2m x 2m x 2m",
+      "serviceType": "Standard",
+      "estimatedCost": 4000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": 20,
+      "userId": 10,
+      "customerId": 14,
+      "origin": {
+        "portId": 18
+      },
+      "destination": {
+        "portId": 19
+      },
+      "goodsType": "Furniture",
+      "weight": 2500,
+      "dimensions": "4m x 3m x 2m",
+      "serviceType": "Express",
+      "estimatedCost": 6000,
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "quotationId": 1,
+      "userId": 2,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK123456789",
+      "carrier": "FedEx",
+      "createdAt": "2024-12-02T12:00:00.000Z",
+      "updatedAt": "2024-12-02T12:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "quotationId": 4,
+      "userId": 3,
+      "paymentMethod": "PayPal",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK987654321",
+      "carrier": "UPS",
+      "createdAt": "2024-12-05T14:30:00.000Z",
+      "updatedAt": "2024-12-05T14:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "quotationId": 5,
+      "userId": 7,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRACK123123123",
+      "carrier": "DHL",
+      "createdAt": "2024-12-06T09:15:00.000Z",
+      "updatedAt": "2024-12-06T09:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "quotationId": 6,
+      "userId": 1,
+      "paymentMethod": "Bank Transfer",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK456789012",
+      "carrier": "USPS",
+      "createdAt": "2024-12-07T11:45:00.000Z",
+      "updatedAt": "2024-12-07T11:45:00.000Z"
+    },
+    {
+      "id": 5,
+      "quotationId": 7,
+      "userId": 5,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK789012345",
+      "carrier": "FedEx",
+      "createdAt": "2024-12-08T10:30:00.000Z",
+      "updatedAt": "2024-12-08T10:30:00.000Z"
+    },
+    {
+      "id": 6,
+      "quotationId": 8,
+      "userId": 8,
+      "paymentMethod": "PayPal",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRACK012345678",
+      "carrier": "DHL",
+      "createdAt": "2024-12-09T15:20:00.000Z",
+      "updatedAt": "2024-12-09T15:20:00.000Z"
+    },
+    {
+      "id": 7,
+      "quotationId": 9,
+      "userId": 9,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK234567890",
+      "carrier": "UPS",
+      "createdAt": "2024-12-10T09:10:00.000Z",
+      "updatedAt": "2024-12-10T09:10:00.000Z"
+    },
+    {
+      "id": 8,
+      "quotationId": 10,
+      "userId": 10,
+      "paymentMethod": "Bank Transfer",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK345678901",
+      "carrier": "USPS",
+      "createdAt": "2024-12-11T13:50:00.000Z",
+      "updatedAt": "2024-12-11T13:50:00.000Z"
+    },
+    {
+      "id": 9,
+      "quotationId": 11,
+      "userId": 4,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRACK456789012",
+      "carrier": "FedEx",
+      "createdAt": "2024-12-12T16:40:00.000Z",
+      "updatedAt": "2024-12-12T16:40:00.000Z"
+    },
+    {
+      "id": 10,
+      "quotationId": 12,
+      "userId": 6,
+      "paymentMethod": "PayPal",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK567890123",
+      "carrier": "DHL",
+      "createdAt": "2024-12-13T08:25:00.000Z",
+      "updatedAt": "2024-12-13T08:25:00.000Z"
+    },
+    {
+      "id": 11,
+      "quotationId": 13,
+      "userId": 3,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK678901234",
+      "carrier": "UPS",
+      "createdAt": "2024-12-14T11:15:00.000Z",
+      "updatedAt": "2024-12-14T11:15:00.000Z"
+    },
+    {
+      "id": 12,
+      "quotationId": 14,
+      "userId": 7,
+      "paymentMethod": "Bank Transfer",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRACK789012345",
+      "carrier": "USPS",
+      "createdAt": "2024-12-15T14:05:00.000Z",
+      "updatedAt": "2024-12-15T14:05:00.000Z"
+    },
+    {
+      "id": 13,
+      "quotationId": 15,
+      "userId": 10,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK890123456",
+      "carrier": "FedEx",
+      "createdAt": "2024-12-16T17:55:00.000Z",
+      "updatedAt": "2024-12-16T17:55:00.000Z"
+    },
+    {
+      "id": 14,
+      "quotationId": 16,
+      "userId": 2,
+      "paymentMethod": "PayPal",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK901234567",
+      "carrier": "DHL",
+      "createdAt": "2024-12-17T10:45:00.000Z",
+      "updatedAt": "2024-12-17T10:45:00.000Z"
+    },
+    {
+      "id": 15,
+      "quotationId": 17,
+      "userId": 1,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRACK012345678",
+      "carrier": "UPS",
+      "createdAt": "2024-12-18T13:35:00.000Z",
+      "updatedAt": "2024-12-18T13:35:00.000Z"
+    },
+    {
+      "id": 16,
+      "quotationId": 18,
+      "userId": 5,
+      "paymentMethod": "Bank Transfer",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK123456789",
+      "carrier": "USPS",
+      "createdAt": "2024-12-19T09:25:00.000Z",
+      "updatedAt": "2024-12-19T09:25:00.000Z"
+    },
+    {
+      "id": 17,
+      "quotationId": 19,
+      "userId": 9,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK234567890",
+      "carrier": "FedEx",
+      "createdAt": "2024-12-20T12:15:00.000Z",
+      "updatedAt": "2024-12-20T12:15:00.000Z"
+    },
+    {
+      "id": 18,
+      "quotationId": 20,
+      "userId": 10,
+      "paymentMethod": "PayPal",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRACK345678901",
+      "carrier": "DHL",
+      "createdAt": "2024-12-21T15:05:00.000Z",
+      "updatedAt": "2024-12-21T15:05:00.000Z"
+    },
+    {
+      "id": 19,
+      "quotationId": 21,
+      "userId": 7,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "Completed",
+      "orderStatus": "Confirmed",
+      "trackingNumber": "TRACK456789012",
+      "carrier": "UPS",
+      "createdAt": "2024-12-22T18:55:00.000Z",
+      "updatedAt": "2024-12-22T18:55:00.000Z"
+    },
+    {
+      "id": 20,
+      "quotationId": 22,
+      "userId": 8,
+      "paymentMethod": "Bank Transfer",
+      "paymentStatus": "Pending",
+      "orderStatus": "In Transit",
+      "trackingNumber": "TRACK567890123",
+      "carrier": "USPS",
+      "createdAt": "2024-12-23T11:45:00.000Z",
+      "updatedAt": "2024-12-23T11:45:00.000Z"
+    }
+  ],
+  "support": [
+    {
+      "openTickets": [
+        {
+          "id": 1,
+          "userId": 3,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 2,
+          "userId": 1,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 3,
+          "userId": 6,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 4,
+          "userId": 1,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 5,
+          "userId": 2,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "closedTickets": [
+        {
+          "id": 1,
+          "userId": 3,
+          "details": "Closed shipment GL-5609 by mistake.",
+          "response": "Reopened shipment. Closed ticket",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 3,
+          "userId": 3,
+          "details": "Closed shipment GL-5609 by mistake.",
+          "response": "Reopened shipment. Closed ticket",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 4,
+          "userId": 6,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 5,
+          "userId": 6,
+          "details": "Closed shipment GL-5609 by mistake.",
+          "response": "Reopened shipment. Closed ticket",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 6,
+          "userId": 2,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        },
+        {
+          "id": 7,
+          "userId": 1,
+          "details": "Wrong listed shipment number for the products.",
+          "response": "Issue corrected and awaiting response to close ticket.",
+          "createdAt": "2024-12-02T12:00:00.000Z",
+          "updatedAt": "2024-12-02T12:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}
