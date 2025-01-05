@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../hooks/AuthContext';
 
 const Profile: React.FC = () => {
 	const { user } = useAuth();
+	const [roles, setRoles] = useState<Role[]>([]);
+	const [companies, setCompanies] = useState<Company[]>([]);
+	const [error, setError] = useState<string | null>(null);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const res = await fetch('./dh.json');
+				if (!res.ok) {
+					throw new Error('Failed to get profile data');
+				}
+				const data = await res.json();
+				setRoles(data.roles);
+				setCompanies(data.companies);
+			} catch {
+				serError(err.message);
+			}
+		};
+		fetchData();
+	}, []);
 
 	if (!user) {
 		return <p>Loading profile...</p>;
@@ -18,18 +38,13 @@ const Profile: React.FC = () => {
 				<strong>Email:</strong> {user.email}
 			</p>
 			<p>
-				<strong>Role ID:</strong> {user.roleId}
+				<strong>Role:</strong> {user?.roleName}
 			</p>
 			<p>
-				<strong>Company ID:</strong> {user.companyId}
+				<strong>Company:</strong> {user.companyName}
 			</p>
 			<p>
-				<strong>Joined on:</strong>{' '}
-				{new Date(user.createdAt).toLocaleDateString()}
-			</p>
-			<p>
-				<strong>Last Updated:</strong>{' '}
-				{new Date(user.updatedAt).toLocaleDateString()}
+				<strong>Joined:</strong> {new Date(user.createdAt).toLocaleDateString()}
 			</p>
 			{/* Add more profile details as needed */}
 		</div>

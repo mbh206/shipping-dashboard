@@ -18,24 +18,28 @@ const TopNavBar: React.FC = () => {
 				{user ? (
 					<>
 						<span className='px-1'>
-							<strong className='uppercase text-xs text-gray-500'>User:</strong>
+							<strong className='uppercase text-xs text-gray-500'>
+								User:{' '}
+							</strong>
 							{user.username}
 						</span>
 						<span className='px-1'>
 							<strong className='uppercase text-xs text-gray-500'>
-								Email:
+								Email:{' '}
 							</strong>
 							{user.email}
 						</span>
 						<br />
 						<span className='px-1'>
 							<strong className='uppercase text-xs text-gray-500'>
-								Company:
+								Company:{' '}
 							</strong>
 							{user.companyName}
 						</span>
 						<span className='px-1'>
-							<strong className='uppercase text-xs text-gray-500'>Role:</strong>
+							<strong className='uppercase text-xs text-gray-500'>
+								Role:{' '}
+							</strong>
 							{user?.roleName}
 						</span>
 					</>
