@@ -4,14 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { Quotation } from '../types/Quotation';
 import { Order } from '../types/Order';
 import { useAuth } from '../hooks/AuthContext';
+import { Customer } from '../types/Customer';
 
 const QuotationOrdering: React.FC = () => {
 	const { user } = useAuth();
-
-	// State for Quotations
 	const [quotations, setQuotations] = useState<Quotation[]>([]);
 	const [customers, setCustomers] = useState<Customer[]>([]);
-	const [contacts, setContacts] = useState<Contact[]>([]);
 	const [loadingQuotations, setLoadingQuotations] = useState<boolean>(true);
 	const [errorQuotations, setErrorQuotations] = useState<string | null>(null);
 
@@ -34,7 +32,6 @@ const QuotationOrdering: React.FC = () => {
 				setQuotations(data.quotations);
 				setOrders(data.orders);
 				setCustomers(data.customers);
-				setContacts(data.contacts);
 				setLoadingQuotations(false);
 				setLoadingOrders(false);
 			} catch (error: any) {
@@ -85,23 +82,23 @@ const QuotationOrdering: React.FC = () => {
 										(c) => c.id === quotation.customerId
 									);
 
-									if (customer.companyId == user?.companyId) {
+									if (customer?.companyId == user?.companyId) {
 										return (
 											<tr
 												key={quotation.id}
 												className='text-center text-gray-100 bg-gray-500'>
 												<td className='py-2 px-4 border-b'>{quotation.id}</td>
 												<td className='py-2 px-4 border-b'>
-													{customer.companyName}
+													{customer?.companyName}
 												</td>
 												<td className='py-2 px-4 border-b'>
-													{customer.contactEmail}
+													{customer?.contactEmail}
 												</td>
 												<td className='py-2 px-4 border-b'>
-													{quotation.origin.portId}
+													{quotation.originPortId}
 												</td>
 												<td className='py-2 px-4 border-b'>
-													{quotation.destination.portId}
+													{quotation.destinationPortId}
 												</td>
 												<td className='py-2 px-4 border-b'>
 													{quotation.goodsType}

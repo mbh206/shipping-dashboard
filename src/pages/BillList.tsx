@@ -1,6 +1,8 @@
 // src/pages/BillList.tsx
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../hooks/AuthContext';
+import { Customer } from '../types/Customer';
+import { Shipment } from '../types/Shipment';
 
 interface Billing {
 	id: number;
@@ -20,7 +22,7 @@ const Billing: React.FC = () => {
 	const [billings, setBillings] = useState<Billing[]>([]);
 	const [customers, setCustomers] = useState<Customer[]>([]);
 	const [shipments, setShipments] = useState<Shipment[]>([]);
-	const [error, setError] = useState<string | null>(null);
+	const [, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -35,9 +37,9 @@ const Billing: React.FC = () => {
 				setBillings(data.billing);
 				setCustomers(data.customers);
 				setShipments(data.shipments);
-			} catch (err: any) {
-				console.error('Error fetching data:', err);
-				setError(err.message);
+			} catch (error: any) {
+				console.error('Error fetching data:', error);
+				setError(error.message);
 			}
 		};
 		fetchData();
@@ -70,7 +72,7 @@ const Billing: React.FC = () => {
 									(c) => c.id === bill.shipmentId
 								);
 								const customer = customers.find(
-									(c) => c.id === shipment.customerId
+									(c) => c.id === shipment?.customerId
 								);
 								if (customer?.companyId == user?.companyId) {
 									return (
@@ -79,7 +81,7 @@ const Billing: React.FC = () => {
 											className='text-center text-gray-100 bg-gray-500'>
 											<td className='py-2 px-4 border-b'>{bill.id}</td>
 											<td className='py-2 px-4 border-b'>
-												{customer.companyName}
+												{customer?.companyName}
 											</td>
 											<td className='py-2 px-4 border-b'>${bill.amount}</td>
 											<td className='py-2 px-4 border-b'>{bill.date}</td>

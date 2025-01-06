@@ -19,7 +19,7 @@ const Partner: React.FC = () => {
 	const { user } = useAuth();
 	const [partners, setPartners] = useState<Partner[]>([]);
 	const [companies, setCompanies] = useState<Company[]>([]);
-	const [error, setError] = useState<string | null>(null);
+	const [, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -66,7 +66,7 @@ const Partner: React.FC = () => {
 								const company = companies.find(
 									(c) => c.id === partner.companyId
 								);
-								if (company.name == user?.companyName)
+								if (company?.name == user?.companyName)
 									return (
 										<tr
 											key={partner.id}
@@ -84,7 +84,7 @@ const Partner: React.FC = () => {
 											<td className='py-2 px-4 border-b'>
 												{partner.servicesProvided}
 											</td>
-											<td className='py-2 px-4 border-b'>{company.name}</td>
+											<td className='py-2 px-4 border-b'>{company?.name}</td>
 										</tr>
 									);
 							})}

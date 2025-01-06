@@ -19,7 +19,7 @@ interface SupportData {
 const Support: React.FC = () => {
 	const { user } = useAuth();
 	const [supports, setSupports] = useState<SupportData[]>([]);
-	const [error, setError] = useState<string | null>(null);
+	const [, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -46,7 +46,7 @@ const Support: React.FC = () => {
 				<p className='mb-4'>Here you can view and manage all your support.</p>
 				<hr />
 				<h2 className='text-xl mb-2'>Open Tickets</h2>
-				{supports.map((ticketGroup, index) => {
+				{supports.map((ticketGroup) => {
 					if (ticketGroup.openTickets) {
 						return ticketGroup.openTickets
 							.filter((ticket) => ticket.userId === user?.id)
@@ -68,7 +68,7 @@ const Support: React.FC = () => {
 
 				{/* Closed Tickets Section */}
 				<h2 className='text-xl mb-2 mt-6'>Closed Tickets</h2>
-				{supports.map((ticketGroup, index) => {
+				{supports.map((ticketGroup) => {
 					if (ticketGroup.closedTickets) {
 						return ticketGroup.closedTickets
 							.filter((ticket) => ticket.userId === user?.id)

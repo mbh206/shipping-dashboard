@@ -4,8 +4,8 @@ export interface Quotation {
 	userId: number;
 	customerName: string;
 	customerEmail: string;
-	origin: string;
-	destination: string;
+	originPortId: number;
+	destinationPortId: number;
 	goodsType: string;
 	weight: number; // in kilograms
 	dimensions: string; // e.g., "2m x 1.5m x 1m"

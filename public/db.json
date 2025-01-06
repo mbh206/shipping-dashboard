@@ -2222,12 +2222,8 @@
       "id": 1,
       "userId": 6,
       "customerId": 2,
-      "origin": {
-        "portId": 1
-      },
-      "destination": {
-        "portId": 4
-      },
+      "originPortId": 1,
+      "destinationPortId": 4,
       "goodsType": "Parishables",
       "weight": 250,
       "dimensions": "2m x 1.5m x 1m",
@@ -2240,12 +2236,8 @@
       "id": 2,
       "userId": 4,
       "customerId": 1,
-      "origin": {
-        "portId": 3
-      },
-      "destination": {
-        "portId": 2
-      },
+      "originPortId": 3,
+      "destinationPortId": 2,
       "goodsType": "Automobiles",
       "weight": 15000,
       "dimensions": "2m x 5m x 10m",
@@ -2258,12 +2250,8 @@
       "id": 3,
       "userId": 2,
       "customerId": 4,
-      "origin": {
-        "portId": 2
-      },
-      "destination": {
-        "portId": 3
-      },
+      "originPortId": 2,
+      "destinationPortId": 3,
       "goodsType": "Electronics",
       "weight": 1050,
       "dimensions": "2m x 1.5m x 4m",
@@ -2276,12 +2264,8 @@
       "id": 4,
       "userId": 3,
       "customerId": 5,
-      "origin": {
-        "portId": 6
-      },
-      "destination": {
-        "portId": 7
-      },
+      "originPortId": 6,
+      "destinationPortId": 7,
       "goodsType": "Furniture",
       "weight": 500,
       "dimensions": "3m x 2m x 1.5m",
@@ -2294,12 +2278,8 @@
       "id": 5,
       "userId": 7,
       "customerId": 10,
-      "origin": {
-        "portId": 8
-      },
-      "destination": {
-        "portId": 9
-      },
+      "originPortId": 8,
+      "destinationPortId": 9,
       "goodsType": "Automobiles",
       "weight": 2000,
       "dimensions": "4m x 2m x 1.8m",
@@ -2312,12 +2292,8 @@
       "id": 6,
       "userId": 1,
       "customerId": 3,
-      "origin": {
-        "portId": 10
-      },
-      "destination": {
-        "portId": 11
-      },
+      "originPortId": 10,
+      "destinationPortId": 11,
       "goodsType": "Books",
       "weight": 300,
       "dimensions": "1m x 1m x 1m",
@@ -2330,12 +2306,8 @@
       "id": 7,
       "userId": 5,
       "customerId": 7,
-      "origin": {
-        "portId": 12
-      },
-      "destination": {
-        "portId": 13
-      },
+      "originPortId": 12,
+      "destinationPortId": 13,
       "goodsType": "Clothing",
       "weight": 800,
       "dimensions": "2m x 1m x 1m",
@@ -2348,12 +2320,8 @@
       "id": 8,
       "userId": 8,
       "customerId": 9,
-      "origin": {
-        "portId": 14
-      },
-      "destination": {
-        "portId": 15
-      },
+      "originPortId": 14,
+      "destinationPortId": 15,
       "goodsType": "Machinery",
       "weight": 5000,
       "dimensions": "5m x 3m x 2m",
@@ -2366,12 +2334,8 @@
       "id": 9,
       "userId": 9,
       "customerId": 12,
-      "origin": {
-        "portId": 16
-      },
-      "destination": {
-        "portId": 17
-      },
+      "originPortId": 16,
+      "destinationPortId": 17,
       "goodsType": "Pharmaceuticals",
       "weight": 1200,
       "dimensions": "2m x 2m x 2m",
@@ -2384,12 +2348,8 @@
       "id": 10,
       "userId": 10,
       "customerId": 14,
-      "origin": {
-        "portId": 18
-      },
-      "destination": {
-        "portId": 19
-      },
+      "originPortId": 18,
+      "destinationPortId": 19,
       "goodsType": "Furniture",
       "weight": 2500,
       "dimensions": "4m x 3m x 2m",
@@ -2402,12 +2362,8 @@
       "id": 11,
       "userId": 4,
       "customerId": 6,
-      "origin": {
-        "portId": 20
-      },
-      "destination": {
-        "portId": 1
-      },
+      "originPortId": 20,
+      "destinationPortId": 1,
       "goodsType": "Electronics",
       "weight": 1800,
       "dimensions": "3m x 2m x 1.5m",
@@ -2420,12 +2376,8 @@
       "id": 12,
       "userId": 6,
       "customerId": 11,
-      "origin": {
-        "portId": 5
-      },
-      "destination": {
-        "portId": 4
-      },
+      "originPortId": 5,
+      "destinationPortId": 4,
       "goodsType": "Office Supplies",
       "weight": 400,
       "dimensions": "1.5m x 1m x 0.5m",
@@ -2438,12 +2390,8 @@
       "id": 13,
       "userId": 2,
       "customerId": 8,
-      "origin": {
-        "portId": 9
-      },
-      "destination": {
-        "portId": 10
-      },
+      "originPortId": 9,
+      "destinationPortId": 10,
       "goodsType": "Automobiles",
       "weight": 2000,
       "dimensions": "4m x 2m x 1.8m",
@@ -2456,12 +2404,8 @@
       "id": 14,
       "userId": 14,
       "customerId": 10,
-      "origin": {
-        "portId": 7
-      },
-      "destination": {
-        "portId": 5
-      },
+      "originPortId": 7,
+      "destinationPortId": 5,
       "goodsType": "Electronics",
       "weight": 800,
       "dimensions": "2m x 1.5m x 4m",
@@ -2474,12 +2418,8 @@
       "id": 15,
       "userId": 10,
       "customerId": 19,
-      "origin": {
-        "portId": 12
-      },
-      "destination": {
-        "portId": 13
-      },
+      "originPortId": 12,
+      "destinationPortId": 13,
       "goodsType": "Electronics",
       "weight": 1200,
       "dimensions": "3m x 1.5m x 2m",
@@ -2492,12 +2432,8 @@
       "id": 16,
       "userId": 6,
       "customerId": 3,
-      "origin": {
-        "portId": 1
-      },
-      "destination": {
-        "portId": 5
-      },
+      "originPortId": 1,
+      "destinationPortId": 5,
       "goodsType": "Books",
       "weight": 300,
       "dimensions": "1m x 1m x 1m",
@@ -2510,12 +2446,8 @@
       "id": 17,
       "userId": 5,
       "customerId": 7,
-      "origin": {
-        "portId": 4
-      },
-      "destination": {
-        "portId": 6
-      },
+      "originPortId": 4,
+      "destinationPortId": 6,
       "goodsType": "Clothing",
       "weight": 800,
       "dimensions": "2m x 1m x 1m",
@@ -2528,12 +2460,8 @@
       "id": 18,
       "userId": 8,
       "customerId": 9,
-      "origin": {
-        "portId": 14
-      },
-      "destination": {
-        "portId": 15
-      },
+      "originPortId": 14,
+      "destinationPortId": 15,
       "goodsType": "Machinery",
       "weight": 5000,
       "dimensions": "5m x 3m x 2m",
@@ -2546,12 +2474,8 @@
       "id": 19,
       "userId": 9,
       "customerId": 12,
-      "origin": {
-        "portId": 16
-      },
-      "destination": {
-        "portId": 17
-      },
+      "originPortId": 16,
+      "destinationPortId": 17,
       "goodsType": "Pharmaceuticals",
       "weight": 1200,
       "dimensions": "2m x 2m x 2m",
@@ -2564,12 +2488,8 @@
       "id": 20,
       "userId": 10,
       "customerId": 14,
-      "origin": {
-        "portId": 18
-      },
-      "destination": {
-        "portId": 19
-      },
+      "originPortId": 18,
+      "destinationPortId": 19,
       "goodsType": "Furniture",
       "weight": 2500,
       "dimensions": "4m x 3m x 2m",

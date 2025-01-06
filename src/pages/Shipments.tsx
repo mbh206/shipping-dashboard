@@ -1,6 +1,10 @@
 // src/pages/Shipments.tsx
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../hooks/AuthContext';
+import { Contact } from '../types/Contact';
+import { Customer } from '../types/Customer';
+import { Billing } from '../types/Billing';
+import { Location } from '../types/Location';
 
 interface Shipment {
 	id: number;
@@ -22,7 +26,7 @@ const Shipments: React.FC = () => {
 	const [shipments, setShipments] = useState<Shipment[]>([]);
 	const [customers, setCustomers] = useState<Customer[]>([]);
 	const [contacts, setContacts] = useState<Contact[]>([]);
-	const [ports, setPorts] = useState<Port[]>([]);
+	const [locations, setLocations] = useState<Location[]>([]);
 	const [billing, setBilling] = useState<Billing[]>([]);
 	const [loading, setLoading] = useState<boolean>(true);
 	const [error, setError] = useState<string | null>(null);
@@ -38,7 +42,7 @@ const Shipments: React.FC = () => {
 				setShipments(data.shipments);
 				setCustomers(data.customers);
 				setContacts(data.contacts);
-				setPorts(data.ports);
+				setLocations(data.ports);
 				setBilling(data.billing);
 				setLoading(false);
 			} catch (err: any) {
@@ -81,16 +85,16 @@ const Shipments: React.FC = () => {
 								const contact = contacts.find(
 									(c) => c.id === shipment.mainContactId
 								);
-								const departurePort = ports.find(
+								const departurePort = locations.find(
 									(p) => p.id === shipment.departurePortId
 								);
-								const arrivalPort = ports.find(
+								const arrivalPort = locations.find(
 									(p) => p.id === shipment.arrivalPortId
 								);
 								const billingRecord = billing.find(
 									(b) => b.id === shipment.billingId
 								);
-								if (customer.companyId == user?.companyId) {
+								if (customer?.companyId == user?.companyId) {
 									return (
 										<tr
 											key={shipment.id}
@@ -100,7 +104,7 @@ const Shipments: React.FC = () => {
 												{shipment.contents}
 											</td>
 											<td className='py-2 px-4 border-b'>
-												{customer ? customer.name : 'N/A'}
+												{customer ? customer.companyName : 'N/A'}
 											</td>
 											<td className='py-2 px-4 border-b'>
 												{contact ? contact.name : 'N/A'}

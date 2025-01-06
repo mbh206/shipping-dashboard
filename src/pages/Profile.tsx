@@ -1,28 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useAuth } from '../hooks/AuthContext';
 
 const Profile: React.FC = () => {
 	const { user } = useAuth();
-	const [roles, setRoles] = useState<Role[]>([]);
-	const [companies, setCompanies] = useState<Company[]>([]);
-	const [error, setError] = useState<string | null>(null);
-
-	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const res = await fetch('./dh.json');
-				if (!res.ok) {
-					throw new Error('Failed to get profile data');
-				}
-				const data = await res.json();
-				setRoles(data.roles);
-				setCompanies(data.companies);
-			} catch {
-				serError(err.message);
-			}
-		};
-		fetchData();
-	}, []);
 
 	if (!user) {
 		return <p>Loading profile...</p>;

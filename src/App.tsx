@@ -1,5 +1,5 @@
-// src/App.tsx
 import './App.css';
+import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import Login from './pages/Login';
@@ -7,7 +7,7 @@ import DashboardLayout from './pages/DashboardLayout';
 import DashboardHome from './pages/DashboardHome';
 import Shipments from './pages/Shipments';
 import Quotation from './pages/QuotationOrdering';
-import LocationMgmt from './pages/LocationMgmt';
+import Location from './pages/Location';
 import Billing from './pages/BillList';
 import Partner from './pages/Partner';
 import ProductMgmt from './pages/ProductMgmt';
@@ -50,8 +50,8 @@ function App() {
 						element={<Quotation />}
 					/>
 					<Route
-						path='locationmgmt'
-						element={<LocationMgmt />}
+						path='location'
+						element={<Location />}
 					/>
 					<Route
 						path='billing'

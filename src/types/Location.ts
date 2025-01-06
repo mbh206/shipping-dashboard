@@ -1,4 +1,4 @@
-export interface Port {
+export interface Location {
 	id: number;
 	name: string;
 	country: string;

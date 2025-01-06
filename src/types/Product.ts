@@ -1,4 +1,5 @@
 export interface Product {
+	arrivalPortId: number;
 	id: number;
 	product: string;
 	weight: number; // in kilograms

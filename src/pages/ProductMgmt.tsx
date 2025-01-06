@@ -1,14 +1,18 @@
 // src/pages/ProductMgmt.tsx
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../hooks/AuthContext';
+import { Customer } from '../types/Customer';
+import { Product } from '../types/Product';
+import { Shipment } from '../types/Shipment';
+import { Location } from '../types/Location';
 
 const ProductMgmt: React.FC = () => {
 	const { user } = useAuth();
 	const [customers, setCustomer] = useState<Customer[]>([]);
-	const [products, setProducts] = useState<Products[]>([]);
+	const [products, setProducts] = useState<Product[]>([]);
 	const [shipments, setShipments] = useState<Shipment[]>([]);
-	const [ports, setPorts] = useState<Ports[]>([]);
-	const [error, setError] = useState<string | null>(null);
+	const [locations, setLocations] = useState<Location[]>([]);
+	const [, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -21,7 +25,7 @@ const ProductMgmt: React.FC = () => {
 				setCustomer(data.customers);
 				setProducts(data.products);
 				setShipments(data.shipments);
-				setPorts(data.ports);
+				setLocations(data.locations);
 			} catch (err: any) {
 				setError(err.message);
 			}
@@ -56,12 +60,12 @@ const ProductMgmt: React.FC = () => {
 										(c) => c.id === product.shipmentId
 									);
 									const customer = customers.find(
-										(c) => c.id === shipment.customerId
+										(c) => c.id === shipment?.customerId
 									);
-									const port = ports.find(
+									const location = locations.find(
 										(c) => c.id === product.arrivalPortId
 									);
-									if (customer.companyId == user?.companyId) {
+									if (customer?.companyId == user?.companyId) {
 										return (
 											<tr
 												key={product.id}
@@ -75,9 +79,9 @@ const ProductMgmt: React.FC = () => {
 												</td>
 												<td className='py-2 px-4 border-b'>{product.amount}</td>
 												<td className='py-2 px-4 border-b'>
-													{shipment.shipmentNumber}
+													{shipment?.shipmentNumber}
 												</td>
-												<td className='py-2 px-4 border-b'>{port.name}</td>
+												<td className='py-2 px-4 border-b'>{location?.name}</td>
 												<td className='py-2 px-4 border-b'>
 													{product.arrivalDate}
 												</td>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBell, FaUserCircle, FaDoorOpen } from 'react-icons/fa';
+import { FaUserCircle, FaDoorOpen } from 'react-icons/fa';
 import { useAuth } from '../hooks/AuthContext';
 import { useNavigate } from 'react-router-dom';
 

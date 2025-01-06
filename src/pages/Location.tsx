@@ -1,25 +1,16 @@
 // src/pages/LocationMgmt.tsx
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../hooks/AuthContext';
-
-interface Ports {
-	id: number;
-	name: string;
-	country: string;
-	coordinates: {
-		latitude: number;
-		longitude: number;
-	};
-	createdAt: string;
-	updatedAt: string;
-}
+import { Location } from '../types/Location';
+import { Shipment } from '../types/Shipment';
+import { Customer } from '../types/Customer';
 
 const LocationMgmt: React.FC = () => {
 	const { user } = useAuth();
 	const [customers, setCustomers] = useState<Customer[]>([]);
-	const [locations, setLocations] = useState<Ports[]>([]);
-	const [shipments, setShipments] = useState<Shipments[]>([]);
-	const [error, setError] = useState<string | null>(null);
+	const [locations, setLocations] = useState<Location[]>([]);
+	const [shipments, setShipments] = useState<Shipment[]>([]);
+	const [, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -34,7 +25,6 @@ const LocationMgmt: React.FC = () => {
 				setCustomers(data.customers);
 			} catch (err: any) {
 				setError(err.message);
-				setLoading(false);
 			}
 		};
 		fetchData();
@@ -61,10 +51,10 @@ const LocationMgmt: React.FC = () => {
 							{locations.map((location) => {
 								const shipment = shipments.find((c) => c.id === location.id);
 								const customer = customers.find(
-									(c) => c.id === shipment.customerId
+									(c) => c.id === shipment?.customerId
 								);
 
-								if (customer.companyId == user?.companyId) {
+								if (customer?.companyId == user?.companyId) {
 									return (
 										<tr
 											key={location.id}

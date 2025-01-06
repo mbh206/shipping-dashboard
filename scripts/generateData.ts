@@ -3,17 +3,22 @@
 import { faker } from '@faker-js/faker';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const publicDir = path.join(__dirname, '../../public');
 
 // Import TypeScript interfaces
-import { Role } from '../types/Role';
-import { Company } from '../types/Company';
-import { User } from '../types/User';
-import { Customer } from '../types/Customer';
-import { Contact } from '../types/Contact';
-import { Port } from '../types/Port';
-import { Partner } from '../types/Partner';
-import { Shipment } from '../types/Shipment';
-import { Billing } from '../types/Billing';
+import { Role } from '../src/types/Role';
+import { Company } from '../src/types/Company';
+import { User } from '../src/types/User';
+import { Customer } from '../src/types/Customer';
+import { Contact } from '../src/types/Contact';
+import { Location } from '../src/types/Location';
+import { Partner } from '../src/types/Partner';
+import { Shipment } from '../src/types/Shipment';
+import { Billing } from '../src/types/Billing';
 
 // Define the number of entries for each entity
 const NUM_ROLES = 4;
@@ -21,7 +26,7 @@ const NUM_COMPANIES = 2;
 const NUM_USERS_PER_COMPANY = 5;
 const NUM_CUSTOMERS_PER_COMPANY = 10;
 const NUM_CONTACTS_PER_CUSTOMER = 3;
-const NUM_PORTS = 5;
+const NUM_LOCATIONS = 5;
 const NUM_PARTNERS_PER_COMPANY = 3;
 const NUM_SHIPMENTS = 20;
 const NUM_BILLINGS = 20;
@@ -58,6 +63,7 @@ companies.forEach((company) => {
 			companyId: company.id,
 			createdAt: faker.date.past().toISOString(),
 			updatedAt: faker.date.recent().toISOString(),
+			password: '123123',
 		});
 		userId++;
 	}
@@ -100,7 +106,7 @@ customers.forEach((customer) => {
 });
 
 // Generate Ports
-const ports: Port[] = Array.from({ length: NUM_PORTS }, (_, i) => ({
+const locations: Location[] = Array.from({ length: NUM_LOCATIONS }, (_, i) => ({
 	id: i + 1,
 	name: `${faker.location.city()} Port`,
 	country: faker.location.country(),
@@ -137,18 +143,18 @@ companies.forEach((company) => {
 let shipmentId = 1;
 const shipments: Shipment[] = [];
 for (let i = 0; i < NUM_SHIPMENTS; i++) {
-	const departurePort = faker.helpers.arrayElement(ports);
+	const departurePort = faker.helpers.arrayElement(locations);
 	const arrivalPort = faker.helpers.arrayElement(
-		ports.filter((port) => port.id !== departurePort.id)
+		locations.filter((port) => port.id !== departurePort.id)
 	);
 	const customer = faker.helpers.arrayElement(customers);
 	const contact = faker.helpers.arrayElement(
 		contacts.filter((c) => c.customerId === customer.id)
 	);
 	const itineraryPorts = faker.helpers
-		.shuffle(ports)
+		.shuffle(locations)
 		.slice(0, 3)
-		.map((port) => port.id);
+		.map((location) => location.id);
 	const billing = shipmentId; // Assuming one billing per shipment for simplicity
 
 	shipments.push({
@@ -214,14 +220,13 @@ const db = {
 	users,
 	customers,
 	contacts,
-	ports,
+	locations,
 	partners,
 	shipments,
 	billing,
 };
 
 // Define the path to the public folder
-const publicDir = path.join(__dirname, '../../public');
 const dbPath = path.join(publicDir, 'db.json');
 
 // Write to db.json

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Shipment } from '../types/Shipment';
-import Shipments from './pages/Shipments';
 import { Quotation } from '../types/Quotation';
 import { Billing } from '../types/Billing';
-import { Product } from '../types/Products';
+import { Product } from '../types/Product';
+import { Customer } from '../types/Customer';
+import { Contact } from '../types/Contact';
+import { Company } from '../types/Company';
 import { Partner } from '../types/Partner';
-import { Port } from '../types/Port';
-import Card from '../components/Card';
+import { Location } from '../types/Location';
 import { useAuth } from '../hooks/AuthContext';
 
 const DashboardHome: React.FC = () => {
@@ -16,7 +17,7 @@ const DashboardHome: React.FC = () => {
 	const [customers, setCustomers] = useState<Customer[]>([]);
 	const [contacts, setContacts] = useState<Contact[]>([]);
 	const [companies, setCompanies] = useState<Company[]>([]);
-	const [ports, setPorts] = useState<Port[]>([]);
+	const [locations, setLocations] = useState<Location[]>([]);
 	const [billing, setBilling] = useState<Billing[]>([]);
 	const [products, setProducts] = useState<Product[]>([]);
 	const [partners, setPartners] = useState<Partner[]>([]);
@@ -37,13 +38,13 @@ const DashboardHome: React.FC = () => {
 				setCustomers(data.customers);
 				setContacts(data.contacts);
 				setCompanies(data.companies);
-				setPorts(data.ports);
+				setLocations(data.ports);
 				setBilling(data.billing);
 				setProducts(data.products);
 				setPartners(data.partners);
 				setLoading(false);
-			} catch (err: any) {
-				setError(err.message);
+			} catch (error: any) {
+				setError(error.message);
 				setLoading(false);
 			}
 		};
@@ -53,8 +54,6 @@ const DashboardHome: React.FC = () => {
 
 	if (loading) return <div>Loading...</div>;
 	if (error) return <div>Error: {error}</div>;
-
-	const getFirstFive = (items: any[]) => items.slice(0, 5);
 
 	return (
 		<div className='dashboard-home text-slate-600'>
@@ -86,16 +85,13 @@ const DashboardHome: React.FC = () => {
 									})
 									.slice(0, 5)
 									.map((shipment) => {
-										const customer = customers.find(
-											(c) => c.id === shipment.customerId
-										);
 										const contact = contacts.find(
 											(c) => c.id === shipment.mainContactId
 										);
-										const departurePort = ports.find(
+										const departurePort = locations.find(
 											(p) => p.id === shipment.departurePortId
 										);
-										const arrivalPort = ports.find(
+										const arrivalPort = locations.find(
 											(p) => p.id === shipment.arrivalPortId
 										);
 										const billingRecord = billing.find(
@@ -224,7 +220,7 @@ const DashboardHome: React.FC = () => {
 												className='text-center text-gray-100 bg-gray-500'>
 												<td className='py-2 px-4 border-b'>{bill.id}</td>
 												<td className='py-2 px-4 border-b'>
-													{shipment.shipmentNumber}
+													{shipment?.shipmentNumber}
 												</td>
 												<td className='py-2 px-4 border-b'>{bill.type}</td>
 												<td className='py-2 px-4 border-b'>${bill.amount}</td>
@@ -267,10 +263,6 @@ const DashboardHome: React.FC = () => {
 									})
 									.slice(0, 5)
 									.map((product) => {
-										const customer = customers.find(
-											(c) => c.id === product.customerId
-										);
-
 										return (
 											<tr
 												key={product.id}
@@ -285,12 +277,12 @@ const DashboardHome: React.FC = () => {
 												<td className='py-2 px-4 border-b'>
 													{new Date(product.arrivalDate)
 														.toLocaleString('en-US', {
-															month: 'short', // e.g., "Dec"
-															day: 'numeric', // e.g., "30"
-															year: 'numeric', // e.g., "2024"
-															hour: 'numeric', // e.g., "1"
-															minute: '2-digit', // e.g., "40"
-															hour12: true, // 12-hour format with AM/PM
+															month: 'short',
+															day: 'numeric',
+															year: 'numeric',
+															hour: 'numeric',
+															minute: '2-digit',
+															hour12: true,
 														})
 														.replace(' AM', 'AM')
 														.replace(' PM', 'PM')}
@@ -368,21 +360,21 @@ const DashboardHome: React.FC = () => {
 								</tr>
 							</thead>
 							<tbody>
-								{ports
-									.filter((port) =>
+								{locations
+									.filter((location) =>
 										shipments.some(
 											(shipment) =>
-												shipment.arrivalPortId === port.id &&
+												shipment.arrivalPortId === location.id &&
 												customers.find(
 													(customer) => customer.id === shipment.customerId
 												)?.companyId === user?.companyId
 										)
 									)
 									.slice(0, 5)
-									.map((port) => {
+									.map((location) => {
 										const shipmentsForPort = shipments.filter(
 											(shipment) =>
-												shipment.arrivalPortId === port.id &&
+												shipment.arrivalPortId === location.id &&
 												customers.find(
 													(customer) => customer.id === shipment.customerId
 												)?.companyId === user?.companyId
@@ -390,11 +382,13 @@ const DashboardHome: React.FC = () => {
 
 										return (
 											<tr
-												key={port.id}
+												key={location.id}
 												className='text-center text-gray-100 bg-gray-500'>
-												<td className='py-2 px-4 border-b'>{port.id}</td>
-												<td className='py-2 px-4 border-b'>{port.name}</td>
-												<td className='py-2 px-4 border-b'>{port.country}</td>
+												<td className='py-2 px-4 border-b'>{location.id}</td>
+												<td className='py-2 px-4 border-b'>{location.name}</td>
+												<td className='py-2 px-4 border-b'>
+													{location.country}
+												</td>
 												<td className='py-2 px-4 border-b'>
 													{shipmentsForPort.length > 0
 														? shipmentsForPort
